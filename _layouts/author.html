@@ -1,0 +1,52 @@
+---
+layout: default
+---
+{% include homehead.html %}
+
+{% assign totpost = 0 %}
+{% assign filtered_posts = site.posts | where: 'author', page.short_name %}
+{% for post in filtered_posts %}
+  {% assign totpost = totpost | plus: 1 %}
+{% endfor %}
+
+<div class="author-meta_page">
+  <img class="author-meta_page-ava" src="{{ page.avatar }}" alt="{{ page.name }}">
+  <p class="author-meta_page-title">{{ page.name }}</p>
+  <p class="author-meta_page-bio">{{ page.bio }}</p>
+  <div>
+    <a href="">
+      <i></i>
+    </a>
+    <a href="">
+      <i></i>
+    </a>
+    <a href="">
+      <i></i>
+    </a>
+  </div>
+  <p class="author-totalpost">
+    {% if totpost <= 1 %}
+    {{ totpost }} total post
+    {% else %}
+    {{ totpost }} total posts
+    {% endif %}
+  </p>
+</div>
+
+{% if totpost < 1 %}
+{% else %}
+<h2>Posts</h2>
+<div class="card-list oi">
+  {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
+  {% for post in filtered_posts %}
+    <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" class="mr-20">
+      <div class="card-wrapper">
+        <div class="background"></div>
+        <img class="image lazyload" src="/img/placeholder.svg" data-src="{% if post.thumb %} {{ post.thumb }} {% else %} https://res.cloudinary.com/notee/image/upload/v1640412257/notes/default-thumb.webp {% endif %}" alt="{{ post.title }}">
+        <div class="kepala p-24"><h1 class="judul">{{ post.title }}</h1><p>{{ post.description }}</p></div>
+        <div class="footer p-24">{% assign minute=post.content | number_of_words | divided_by: 265 | plus: 1 %}<small datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b, %y" }} - {% if post.minute %} {{ post.minute }} {% else %} {{ minute }} {% endif %} min Read</small></div>
+      </div>
+    </a>
+  {% endfor %}
+</div>
+{% endif %}

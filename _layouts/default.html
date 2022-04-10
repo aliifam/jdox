@@ -1,0 +1,66 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="id">
+{% include head.html %}
+ <!-- buat skrip analitik -->
+<script src="https://afarkas.github.io/lazysizes/lazysizes.min.js" async=""></script>
+<!-- <script async defer data-goatcounter="https://cnotes.goatcounter.com/count" src="//gc.zgo.at/count.js"></script> -->
+<script async defer data-website-id="39cdd68d-3139-4a6d-8d1f-6e1b5b82a2e3" src="https://umami.aliif.space/umami.js"></script>
+
+
+
+
+<body>
+	
+  <script>
+    function setTheme(theme) {
+      try {
+	       if (theme === "dark") {
+		document.documentElement.setAttribute('data-theme', 'dark');
+		window.localStorage.setItem('theme', 'dark');
+		document.getElementById("theme-toggle").classList.add('sun');
+		document.getElementById("theme-toggle").classList.remove('moon');
+	      } else {
+		document.documentElement.setAttribute('data-theme', 'light');
+		window.localStorage.setItem('theme', 'light');
+		document.getElementById("theme-toggle").classList.add('moon');
+		document.getElementById("theme-toggle").classList.remove('sun');
+	      }
+      } catch (error) {
+	      console.log('%c Welcone to CNotes 👋', 'font-family: sans-serif;color: white;background: black;font-size: 2rem;font-weight: bold;')
+      }
+    }
+
+    let theme = localStorage.getItem('theme');
+
+    theme = theme || (window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light' : 'light');
+
+    setTheme(theme);
+
+    function modeSwitcher() {
+      let currentMode = document.documentElement.getAttribute('data-theme');
+
+      if (currentMode === "dark") {
+        setTheme('light');
+      } else {
+        setTheme('dark');
+      }
+    }
+  </script>
+	
+  <main>
+    {% include anchor_headings.html html=content anchorBody="#" %}
+  </main>
+
+</body>
+
+{% include footer.html %}
+ 
+ {% if page.url == '/archive/' or page.url == '/notes/' %}
+	<script src="{{ site.url }}{{ site.baseurl }}/assets/js/custom-search.js"></script>
+ {% endif %}
+
+</html>

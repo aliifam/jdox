@@ -1,0 +1,23 @@
+{% if site.discus-identifier %}
+	
+		
+<div id="disqus_thread">
+    <span class="button-comment" onclick="loadDisqus();return false;">View / Make Comments</span>
+ </div>
+
+  <script>
+    var is_disqus_loaded = false;
+    function loadDisqus() {
+      if (!is_disqus_loaded) {
+        is_disqus_loaded = true;
+        var d = document,
+          s = d.createElement('script');
+        s.src = '//{{ site.discus-identifier }}.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }
+    }
+  </script>
+
+	
+{% endif %}

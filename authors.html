@@ -1,0 +1,29 @@
+---
+layout: default
+title: all the authors
+---
+{% include homehead.html %}
+
+<h1>Authors</h1>
+
+{% for author in site.authors %}
+    {% assign totpost = 0 %}
+    {% assign filtered_posts = site.posts | where: 'author', author.short_name %}
+    {% for post in filtered_posts %}
+        {% assign totpost = totpost | plus: 1 %}
+    {% endfor %}
+    <div class="allauthors">
+        <div>
+            <p class="allauthors-title"><a href="{{ author.url }}">{{ author.name }}</a></p>
+            <p>{{ author.bio }}</p>
+            <p>
+                {% if totpost <= 1 %}
+                {{ totpost }} total post
+                {% else %}
+                {{ totpost }} total posts
+                {% endif %}
+            </p>
+        </div>
+        <img class="allauthors-ava" src="{{ author.avatar }}" alt="{{ author.name }}">
+    </div>
+{% endfor %}

@@ -1,0 +1,41 @@
+---
+layout: default
+title: Blog
+---
+{% include homehead.html %}
+
+<section>
+    <h2 style="text-align: center;">All Posts({{ site.posts | size }}):</h2>
+	
+    <div class="search-article">
+	    <label for="search-input" aria-hidden="true">
+		<!-- Magnifier -->
+		<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+		    stroke="rgba(128,128,128,0.8)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+		    class="feather feather-search">
+		    <circle cx="11" cy="11" r="8"></circle>
+		    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+		</svg>
+	    </label>
+
+	    <input type="text" id="search-input" placeholder="Find some articles here" aria-label="Search" onkeyup="searchnotesFunction()">
+	    <ul id="search-results"></ul>
+    </div>
+
+    <div class="card-list oi" id="myIndexList" style="margin-top: 20px;">
+        {% for post in site.posts %}
+        <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" class="mr-20">
+          <p style="display: none;">{{ post.title }} {{ post.description }}</p>
+          <div class="card-wrapper">
+            <div class="background"></div>
+            <img class="image lazyload" src="{{ site.url }}{{ site.baseurl }}{{ post.url }}/img/placeholder.svg" data-src="{% if post.thumb %} {{ site.url }}{{ site.baseurl }}{{ post.thumb }} {% else %} {{ site.default-thumb }} {% endif %}" alt="{{ post.title }}">
+            <div class="kepala p-24"><h1 class="judul">{{ post.title }}</h1><p>{{ post.description }}</p></div>
+            <div class="footer p-24">{% assign minute=post.content | number_of_words | divided_by: 265 | plus: 1 %}<small datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b, %y" }} - {% if post.minute %} {{ post.minute }} {% else %} {{ minute }} {% endif %} min Read</small></div>
+          </div>
+        </a>
+        {% endfor %}
+    </div>
+    <div style="font-size: x-large;font-weight: 600;display: none;" id="nofound">
+      <p style="text-align: center;">Sorry but not found :(</p>
+    </div>
+</section>

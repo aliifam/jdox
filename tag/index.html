@@ -1,0 +1,21 @@
+---
+layout: default
+title: all Categories
+---
+
+{% include homehead.html %}
+
+<section class="tags" style="margin-top: 0;">
+<h2>all Categories:</h2>
+{% assign tags = site.tags | sort %}
+{% for tag in tags %}
+<ul>
+    <li>
+        <a class="posts" href="{{ site.url }}{{ site.baseurl }}/tag/{{ tag | first | slugify }}/">{{ tag[0] | replace:'-', ' '
+        }} ({{ tag | last | size
+        }}){% unless forloop.last %}, {% endunless %}
+    </a>
+    </li>
+</ul>
+{% endfor %}
+</section>

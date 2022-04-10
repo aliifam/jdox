@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+{% include homehead.html %}
+
+<section class="tags" style="margin-top: 0;">
+  <h2>All tags:</h2>
+  {% assign tags = site.tags | sort %}
+  {% for tag in tags %}
+  <ul>
+    <li>
+	    <a class="posts" href="{{ site.url }}{{ site.baseurl }}/tag/{{ tag | first | slugify }}/">{{ tag[0] | replace:'-', ' '
+        }} ({{ tag | last | size
+        }}){% unless forloop.last %}, {% endunless %}
+      </a>
+    </li>
+  </ul>
+  {% endfor %}
+</section>
+
+{% assign totpost = 0 %}
+{% for post in site.posts %}
+  {% if post.tags contains page.tag %}
+{% assign totpost = totpost | plus: 1 %}
+  {% endif %}
+{% endfor %}
+
+<h2>#{{page.tag}} ({{totpost}})</h2>
+
+<div class="card-list oi">
+    {% for post in site.posts %}
+    {% if post.tags contains page.tag %}
+    <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" class="mr-20">
+      <div class="card-wrapper">
+        <div class="background"></div>
+        <img class="image lazyload" src="{{ site.url }}{{ site.baseurl }}/img/placeholder.svg" data-src="{% if post.thumb %} {{ post.thumb }} {% else %} https://res.cloudinary.com/notee/image/upload/v1640412257/notes/default-thumb.webp {% endif %}" alt="{{ post.title }}">
+        <div class="kepala p-24"><h1 class="judul">{{ post.title }}</h1><p>{{ post.description }}</p></div>
+        <div class="footer p-24">{% assign minute=post.content | number_of_words | divided_by: 265 | plus: 1 %}<small datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b, %y" }} - {% if post.minute %} {{ post.minute }} {% else %} {{ minute }} {% endif %} min Read</small></div>
+      </div>
+    </a>
+    {% endif %}
+    {% endfor %}
+</div>
+
+

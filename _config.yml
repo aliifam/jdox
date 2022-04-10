@@ -1,0 +1,117 @@
+site: JDox
+title: JDox
+greetings: Hi 👋
+description: >-
+  JDox is Jekyll blog theme powered by Github Pages
+lang: en
+image: https://res.cloudinary.com/notee/image/upload/v1640411291/notes/imgseo.jpg
+timezone:  Asia/Jakarta
+repo: https://github.com/aliifam/cnote # site repo [optional]
+data-theme: light # default theme "dark" | "light"
+discus-identifier: webthme
+default-thumb: https://res.cloudinary.com/notee/image/upload/v1640412257/notes/default-thumb.webp
+
+author:
+  name: Aliif Arief
+  url: https://notes.aliif.space/
+  bio: just ordinary boy interest in software development 
+  avatar: https://res.cloudinary.com/notee/image/upload/v1640410819/notes/avatar.jpg
+  username: aliifam # general username
+  github: aliifam # github username
+  twitter: lifrief # twitter username
+  email: me@aliif.space # email adress
+
+twitter:
+  username: lifrief
+  card: summary_large_image
+
+# Font Settings
+googlewebfonts: family=Archivo:wght@400;700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900
+
+# URL settings
+url: "https://aliifam.github.io" # Domain Name of host. [username].github.io for github pages
+baseurl: "/jdox" # sub folder for jekyll site. only if jekyll site not in root of host. leave blank if not wishd. always add / in front.
+permalink: pretty
+
+# local
+# url: "http://localhost:4000" # 
+# baseurl: "" # 
+
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+
+exclude:
+  - .jekyll-cache
+  - .obsidian
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+  - CONTRIBUTING.md
+  
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-relative-links
+paginate: 20
+paginate_path: "/page/:num"
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:slug/
+  authors:
+    output: true
+  
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+    values:
+      image: https://res.cloudinary.com/notee/image/upload/v1640411291/notes/imgseo.jpg
+  - 
+    scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+
+
+relative_links:
+  enabled:     true
+  collections: false
+
+
