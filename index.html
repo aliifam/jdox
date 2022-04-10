@@ -28,7 +28,7 @@ layout: default
     <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" class="mr-20">
       <div class="card-wrapper">
         <div class="background"></div>
-        <img class="image lazyload" src="{{ site.url }}{{ site.baseurl }}{{ post.url }}/img/placeholder.svg" data-src="{% if post.thumb %} {{ site.url }}{{ site.baseurl }}{{ post.thumb }} {% else %} {{ site.default-thumb }} {% endif %}"  alt="{{ post.title }}">
+        <img class="image lazyload" src="{{ site.url }}{{ site.baseurl }}/img/placeholder.svg" data-src="{% if post.thumb %} {{ site.url }}{{ site.baseurl }}{{ post.thumb }} {% else %} {{ site.default-thumb }} {% endif %}"  alt="{{ post.title }}">
         <div class="kepala p-24"><h1 class="judul">{{ post.title }}</h1><p>{{ post.description }}</p></div>
         <div class="footer p-24">{% assign minute=post.content | number_of_words | divided_by: 265 | plus: 1 %}<small datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b, %y" }} - {% if post.minute %} {{ post.minute }} {% else %} {{ minute }} {% endif %} min Read</small></div>
       </div>
