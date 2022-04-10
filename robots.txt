@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://aliifam.github.io/jdox/sitemap.xml
