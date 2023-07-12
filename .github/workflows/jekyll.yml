@@ -4,10 +4,14 @@ name: Jekyll site CI
 on:
   workflow_dispatch:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
+- name: Save state
+run: echo "{name}={value}" >> $GITHUB_STATE
 
+- name: Set output
+run: echo "{name}={value}" >> $GITHUB_OUTPUT
 jobs:
   build:
     runs-on: ubuntu-latest
