@@ -1,48 +1,58 @@
-site: JDox
-title: JDox
-greetings: Hi 👋
-description: >-
-  JDox is Jekyll blog theme powered by Github Pages
+site: Crypto-dissident
+title: Crypto-dissident
+greetings: "Hi 👋"
+description: >
+  "Bienvenue dans l'espace d'un 'Crypto-dissident'".
+  Mon blog couvrira les news, articles, guides & projets sur le 'Bitcoin', le protocole Nostr, Tor (P2P), Blockchain; bref, la 'Décentralisation' & la sécurité des données...
+  En outre, je suis des sujets liés à la cryptographie, la science des données, la programmation... Bref, l'Internet en général!
+  Amusez-vous à lire, & faites quelques commentaires si vous le souhaitez...
+
+  “In a future that includes competition from open source, we can expect that the eventual destiny of any software technology will be to either die or become part of the open infrastructure itself.”
+  ― Eric S. Raymond, The Cathedral & the Bazaar: Musings on Linux and Open Source by an Accidental Revolutionary.
+
 lang: en
-image: https://res.cloudinary.com/notee/image/upload/v1640411291/notes/imgseo.jpg
-timezone:  Asia/Jakarta
-repo: https://github.com/aliifam/cnote # site repo [optional]
+image: "https://turnoff.us/image/en/protocols.png"
+timezone: Africa/Lome
+repo: "https://github.com/Ferrerkomi/segnibokomi.github.io" # site repo [optional]
 data-theme: light # default theme "dark" | "light"
-discus-identifier: webthme
-default-thumb: https://res.cloudinary.com/notee/image/upload/v1640412257/notes/default-thumb.webp
+disqus-identifier: webthme
+default-thumb: "https://res.cloudinary.com/notee/image/upload/v1640412257/notes/default-thumb.webp"
 
 author:
-  name: Aliif Arief
-  url: https://notes.aliif.space/
-  bio: just ordinary boy interest in software development 
-  avatar: https://res.cloudinary.com/notee/image/upload/v1640410819/notes/avatar.jpg
-  username: aliifam # general username
-  github: aliifam # github username
-  twitter: lifrief # twitter username
-  email: me@aliif.space # email adress
+  name: Komi Segnibo
+  url: "https://ferrerkomi.github.io/segnibokomi.github.io/"
+  bio: "Juste un Cyber-chercheur au fond du 'Rabbit-Hole'.
+  Nous ne sommes pas ici parce que nous sommes libres, 
+  Nous sommes ici parce que nous ne sommes pas libres...
+  
+  'Crypto-anarchy is unforgiving of crypto-apathy.' ― Jacob Riggs"
+  
+  avatar: "https://robohash.org/crypto-dissident"
+  username: Komi Hartman # general username
+  github: Ferrerkomi # github username
+  twitter: Komi_Hartman # twitter username
+  email: segnibo2@icloud.com # email address
 
 twitter:
-  username: lifrief
+  username: Komi_Hartman
   card: summary_large_image
 
 # Font Settings
-googlewebfonts: family=Archivo:wght@400;700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900
+googlewebfonts: "family=Archivo:wght@400;700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900"
 
 # URL settings
-url: "https://aliifam.github.io" # Domain Name of host. [username].github.io for github pages
-baseurl: "/jdox" # sub folder for jekyll site. only if jekyll site not in root of host. leave blank if not wishd. always add / in front.
+url: "https://ferrerkomi.github.io/segnibokomi.github.io" # Domain Name of host. [username].github.io for github pages
+baseurl: "/" # subfolder for jekyll site. only if jekyll site not in root of host. leave blank if not wished. always add / in front.
 permalink: pretty
 
 # local
-# url: "http://localhost:4000" # 
-# baseurl: "" # 
-
+# url: "http://localhost:4000" #
+# baseurl: "" #
 
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-
 
 exclude:
   - .jekyll-cache
@@ -52,7 +62,7 @@ exclude:
   - LICENSE.md
   - README.md
   - CONTRIBUTING.md
-  
+
 compress_html:
   clippings: all
   comments: ["<!-- ", " -->"]
@@ -66,19 +76,20 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-relative-links
+
 paginate: 20
 paginate_path: "/page/:num"
 
 collections:
   pages:
     output: true
-    permalink: /:name
+    permalink: "/:name"
   posts:
     output: true
-    permalink: /:slug/
+    permalink: "/:slug"
   authors:
     output: true
-  
+
 defaults:
   -
     scope:
@@ -101,17 +112,14 @@ defaults:
     scope:
       path: ""
     values:
-      image: https://res.cloudinary.com/notee/image/upload/v1640411291/notes/imgseo.jpg
-  - 
+      image: "https://turnoff.us/image/en/ode-to-my-family.png"
+  -
     scope:
       path: ""
       type: "authors"
     values:
       layout: "author"
 
-
 relative_links:
-  enabled:     true
+  enabled: true
   collections: false
-
-
