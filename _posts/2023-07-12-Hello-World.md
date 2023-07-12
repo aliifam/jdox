@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello World!
-description: hanya sebuah postingan pembuka dalam blog notes ini.
+description: Chroniques du Dark Web, Cryptographie & la révolution Bitcoin.
 tags: daily random
 image: https://res.cloudinary.com/notee/image/upload/v1640412430/notes/hello-world.jpg
 thumb: https://res.cloudinary.com/notee/image/upload/v1640412430/notes/hello-world.webp
