@@ -2,7 +2,7 @@ site: Crypto-dissident
 title: Crypto-dissident
 greetings: "Hi 👋"
 description: >
-  "Bienvenue dans l'espace d'un 'Crypto-dissident'".
+  "Bienvenue dans l'espace d'un 'Crypto-dissident'."
   Mon blog couvrira les news, articles, guides & projets sur le 'Bitcoin', le protocole Nostr, Tor (P2P), Blockchain; bref, la 'Décentralisation' & la sécurité des données...
   En outre, je suis des sujets liés à la cryptographie, la science des données, la programmation... Bref, l'Internet en général!
   Amusez-vous à lire, & faites quelques commentaires si vous le souhaitez...
@@ -21,12 +21,7 @@ default-thumb: "https://res.cloudinary.com/notee/image/upload/v1640412257/notes/
 author:
   name: Komi Segnibo
   url: "https://ferrerkomi.github.io/segnibokomi.github.io/"
-  bio: "Juste un Cyber-chercheur au fond du 'Rabbit-Hole'.
-  Nous ne sommes pas ici parce que nous sommes libres, 
-  Nous sommes ici parce que nous ne sommes pas libres...
-  
-  'Crypto-anarchy is unforgiving of crypto-apathy.' ― Jacob Riggs"
-  
+  bio: "Juste un Cyber-chercheur au fond du 'Rabbit-Hole'. Nous ne sommes pas ici parce que nous sommes libres, Nous sommes ici parce que nous ne sommes pas libres... 'Crypto-anarchy is unforgiving of crypto-apathy.' ― Jacob Riggs"
   avatar: "https://robohash.org/crypto-dissident"
   username: Komi Hartman # general username
   github: Ferrerkomi # github username
@@ -43,7 +38,7 @@ googlewebfonts: "family=Archivo:wght@400;700&family=Source+Code+Pro:ital,wght@0,
 # URL settings
 url: "https://ferrerkomi.github.io/segnibokomi.github.io" # Domain Name of host. [username].github.io for github pages
 baseurl: "/" # subfolder for jekyll site. only if jekyll site not in root of host. leave blank if not wished. always add / in front.
-permalink: pretty
+permalink: /:collection/:path/:name/:title/:output_ext/
 
 # local
 # url: "http://localhost:4000" #
@@ -86,7 +81,7 @@ collections:
     permalink: "/:name"
   posts:
     output: true
-    permalink: "/:slug"
+    permalink: "/:slug/"
   authors:
     output: true
 
