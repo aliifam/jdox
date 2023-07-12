@@ -2,14 +2,7 @@ site: Crypto-dissident
 title: Crypto-dissident
 greetings: "Hi 👋"
 description: >
-  "Bienvenue dans l'espace d'un 'Crypto-dissident'."
-  Mon blog couvrira les news, articles, guides & projets sur le 'Bitcoin', le protocole Nostr, Tor (P2P), Blockchain; bref, la 'Décentralisation' & la sécurité des données...
-  En outre, je suis des sujets liés à la cryptographie, la science des données, la programmation... Bref, l'Internet en général!
-  Amusez-vous à lire, & faites quelques commentaires si vous le souhaitez...
-
-  “In a future that includes competition from open source, we can expect that the eventual destiny of any software technology will be to either die or become part of the open infrastructure itself.”
-  ― Eric S. Raymond, The Cathedral & the Bazaar: Musings on Linux and Open Source by an Accidental Revolutionary.
-
+  “The enemy knows the system”. ― Claude Shannon
 lang: en
 image: "https://turnoff.us/image/en/protocols.png"
 timezone: Africa/Lome
