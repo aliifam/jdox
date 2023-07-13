@@ -30,7 +30,7 @@ googlewebfonts: "family=Archivo:wght@400;700&family=Source+Code+Pro:ital,wght@0,
 
 # URL settings
 url: "https://ferrerkomi.github.io/segnibokomi.github.io" # Domain Name of host. [username].github.io for github pages
-baseurl: "/segnibokomi.github.io" # Subfolder for Jekyll site
+baseurl: "" # Set to an empty string
 permalink: pretty
 
 # local
