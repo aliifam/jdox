@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-gem "jekyll", github: "jekyll/jekyll", ref: "refs/pull/9248/head"
+gem "jekyll"
 gem 'jekyll-paginate'
 gem 'jekyll-seo-tag'
 gem 'jekyll-sitemap'
