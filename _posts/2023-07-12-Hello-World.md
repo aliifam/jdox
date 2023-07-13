@@ -28,8 +28,9 @@ _**Adoptez l'état d'esprit du hacker**_
 Entrez dans la peau d'un hacker et explorez l'état d'esprit qui pousse les individus à remettre en question le statu quo. Nous nous plongerons dans le monde du piratage éthique, des tests de pénétration et de la cybersécurité, en comprenant à la fois les dangers et le potentiel positif du piratage. Découvrez comment les pirates pensent, élaborent des stratégies et naviguent dans le paysage numérique avec une perspective unique.
 
 P.s 
-**Rappelez-vous, sur ce blog, la connaissance est le pouvoir, et la curiosité est la clé qui ouvre les portes cachées. Préparez-vous à élargir vos horizons, à remettre en question votre compréhension du domaine numérique et à rejoindre les rangs de ceux qui osent s'aventurer dans des territoires inexplorés.*
 
-**Restez à l'écoute pour mes prochains articles, guides et discussions qui suscitent la réflexion. Ensemble, parcourons les complexités de l'ère numérique et découvrons les secrets qui se trouvent sous la surface.*
+*Rappelez-vous, sur ce blog, la connaissance est le pouvoir, et la curiosité est la clé qui ouvre les portes cachées. Préparez-vous à élargir vos horizons, à remettre en question votre compréhension du domaine numérique et à rejoindre les rangs de ceux qui osent s'aventurer dans des territoires inexplorés.*
+
+*Restez à l'écoute pour mes prochains articles, guides et discussions qui suscitent la réflexion. Ensemble, parcourons les complexités de l'ère numérique et découvrons les secrets qui se trouvent sous la surface.*
 
 **Bonne exploration !** 🫡
