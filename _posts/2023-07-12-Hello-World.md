@@ -2,7 +2,7 @@
 layout: post
 title: Hello World!
 description: Chroniques du Dark Web, Cryptographie & la révolution Bitcoin.
-tags: daily random
+tags: quotidien Bitcoin & Timechain
 image: https://res.cloudinary.com/notee/image/upload/v1640412430/notes/hello-world.jpg
 thumb: https://res.cloudinary.com/notee/image/upload/v1640412430/notes/hello-world.webp
 ---
