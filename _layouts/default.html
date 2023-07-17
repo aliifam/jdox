@@ -8,11 +8,7 @@ layout: compress
  <!-- buat skrip analitik -->
 <script src="https://afarkas.github.io/lazysizes/lazysizes.min.js" async=""></script>
 
-
-
-
 <body>
-	
   <script>
     function setTheme(theme) {
       try {
@@ -28,7 +24,7 @@ layout: compress
 		document.getElementById("theme-toggle").classList.remove('sun');
 	      }
       } catch (error) {
-	      console.log('%c Welcone to CNotes 👋', 'font-family: sans-serif;color: white;background: black;font-size: 2rem;font-weight: bold;')
+	      console.log('%c Welcone to CNotes 👋', 'font-family: sans-serif;color: white;background: black;font-size: 2rem;font-weight: bold;');
       }
     }
 
@@ -47,11 +43,40 @@ layout: compress
         setTheme('dark');
       }
     }
+
+    // Function to fetch wallet details using the LNbits API
+    function getWalletDetails() {
+      const apiKey = "8d05c5fef53b4cb5a2169ce341ca9ce4";
+      const apiUrl = "https://legend.lnbits.com/api/v1/wallet";
+      
+      fetch(apiUrl, {
+        headers: {
+          "X-Api-Key": apiKey
+        }
+      })
+      .then(response => response.json())
+      .then(data => {
+        // Handle the API response here, for example, you can display the wallet ID and balance
+        console.log("Wallet ID:", data.id);
+        console.log("Wallet Name:", data.name);
+        console.log("Balance:", data.balance);
+      })
+      .catch(error => {
+        console.error("Error fetching wallet details:", error);
+      });
+    }
+
+    // Call the function to fetch wallet details
+    getWalletDetails();
+
   </script>
 	
   <main>
     {% include anchor_headings.html html=content anchorBody="#" %}
   </main>
+
+  <!-- Tip Button Element -->
+  <button class="lnbits-tip-button" data-lnbits-wallet-id="8c87505895b64e57ab64d6a3c6f2584e">Tip with LNbits</button>
 
 </body>
 
@@ -60,5 +85,19 @@ layout: compress
  {% if page.url == '/archive/' or page.url == '/notes/' %}
 	<script src="{{ site.url }}{{ site.baseurl }}/assets/js/custom-search.js"></script>
  {% endif %}
+
+ <!-- Include the LNbits JavaScript SDK -->
+<script src="https://lnbits.com/v1/js"></script>
+
+<!-- JavaScript to handle the LNbits Tip Button click event -->
+<script>
+  // Listen for the button click event
+  document.querySelector('.lnbits-tip-button').addEventListener('click', function () {
+    // Create a new LNbits widget instance
+    const widget = new LNbits.Widget();
+    // Open the tip prompt for the specified wallet ID
+    widget.openTipPrompt('8c87505895b64e57ab64d6a3c6f2584e');
+  });
+</script>
 
 </html>
