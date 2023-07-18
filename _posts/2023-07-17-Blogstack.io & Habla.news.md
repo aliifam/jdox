@@ -77,7 +77,7 @@ _Cas de [LNbits](https://legend.lnbits.com/?):_
 
 LNbits est un portefeuille Bitcoin Lightning Network non-custodial et Nostr est un protocole distribué. L'intégration de LNbits dans Nostr permettrait aux utilisateurs d'effectuer des transactions Bitcoin en utilisant le réseau Lightning sur le protocole Nostr via les clients.. D'un point de vue mathématique, le Lightning Network est une solution de deuxième couche (L2) qui permet des transactions Bitcoin rapides et à faible coût en créant des canaux de paiement entre les utilisateurs. Ces canaux de paiement sont essentiellement des transactions Bitcoin multi-signatures qui sont hors chaîne et ne nécessitent pas de confirmation par le réseau Bitcoin. Le portefeuille LNbits utilise des algorithmes mathématiques avancés et des techniques cryptographiques pour gérer ces canaux de paiement et permettre des transactions Bitcoin sécurisées et privées. L'intégration de LNbits dans Nostr fournit aux utilisateurs un moyen convivial et sécurisé de gérer les canaux de paiement Lightning Network et d'effectuer des transactions Bitcoin sur Nostr.
 
-                              E(X)= α*T + β*C + γ*P
+                          E(X)= α*T + β*C + γ*P
 
 Où :
 
