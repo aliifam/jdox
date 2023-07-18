@@ -10,7 +10,7 @@ thumb: https://global-uploads.webflow.com/62e09c5c16206d3eb071a8e2/64060bfe29753
 
 Dans le vaste univers numérique, se démarquer et promouvoir son blog personnel peut se révéler une tâche ardue. Cependant, une lueur d'espoir émerge avec l'avènement des plateformes de blogs décentralisées telles que "[Blogstack](https://github.com/nodetec/blogstack) et [Habla](https://github.com/verbiricha/habla.news)": (Blogs décentralisés avec relais via nostr et lightning tips), de nouvelles opportunités se présentent pour les blogueurs de promouvoir efficacement leur contenu tout en profitant des avantages de la "décentralisation". Les réseaux sociaux décentralisés sont un type de plate-forme de réseaux qui utilise une technologie décentralisée, telle que la blockchain, pour stocker et transmettre des données. Cela signifie que la plate-forme n'est pas contrôlée par une seule entité ou organisation, mais fonctionne plutôt sur un réseau distribué d'ordinateurs. Dans cet article technique, nous aborderons quelques arguments et stratégies pour vous aider à promouvoir votre blog personnel en utilisant Blogstack ou Habla. En effet, l'un des plus grands défis auxquels les blogueurs sont confrontés aujourd'hui est la question de la centralisation. La plupart des plateformes de blogs sont détenues et exploitées par de grandes entreprises, ce qui signifie que les blogueurs sont soumis aux politiques et aux règles de ces entreprises. En cas de violation de ces politiques, un blogueur risque de voir son contenu supprimé ou son compte suspendu, ce qui pourrait le réduire au silence.
 
-**Systémique de Blogstack & Habla**
+**Systémique de Blogstack & Habla:**
 
 [Blogstack](https://blogstack.io/) est une plate-forme de blogging de type Medium construite sur le protocole Nostr, qui permet aux utilisateurs de se connecter facilement avec leur clé privée Nostr et d'avoir une expérience de blogging similaire. Blogstack offre un éditeur markdown, pas de champs supplémentaires.
 
@@ -33,7 +33,7 @@ _Décentralisation: autonomiser la propriété et le contrôle_(Créez un conten
 
 L'un des principaux avantages de l'utilisation de Blogstack et Habla pour promouvoir son blog personnel est l'autonomisation de la propriété et du contrôle des contenus. Contrairement aux plates-formes centralisées, qui peuvent exercer un contrôle sur votre contenu et imposer des limitations, les plates-formes décentralisées vous permettent d'avoir une autonomie complète. Cette propriété établit non seulement la crédibilité, mais garantit également que votre contenu n'est pas affecté par des facteurs externes tels que la censure ou des changements soudains de politique abusive.
 
-_Sécurité et confidentialité renforcées_
+_Sécurité et confidentialité renforcées:_
 
 La confidentialité et la sécurité sont des préoccupations primordiales pour les blogueurs et leurs lecteurs. En tirant parti de Blogstack et Habla, vous pouvez bénéficier des mesures de sécurité renforcées inhérentes aux protocoles décentralisés. Au fur et à mesure que le contenu est distribué sur un réseau de nodes ou noeuds via les principaux relais du protocole Nostr, le risque de violation de données ou d'accès non autorisé est considérablement réduit. Cette confiance dans la sécurité favorise un sentiment de fiabilité parmi vos lecteurs, attirant plus de personnes à s'engager avec votre blog.
 
@@ -45,7 +45,7 @@ _Interopérabilité: maximiser l'adaptabilité et l'exposition_
 
 L'un des avantages remarquables de Blogstack et Habla est leur engagement en faveur de l'interopérabilité. Les protocoles interopérables garantissent que votre contenu peut être facilement réaffecté et adapté sur plusieurs plates-formes et supports. En créant un contenu adaptable, vous pouvez adapter vos billets de blog à différents canaux, tels que des extraits de médias sociaux, des podcasts, des vidéos ou des infographies. Cela maximise l'exposition, attire des publics diversifiés et favorise l'engagement avec votre blog personnel.
 
-_Engagement communautaire et collaboration_
+_Engagement communautaire et collaboration:_
 
 S'engager avec la communauté est crucial pour promouvoir efficacement votre blog personnel. Blogstack et Habla fournissent des communautés dynamiques de personnes partageant les mêmes idées, offrant de nombreuses possibilités d'interaction et de collaboration. Participer activement aux discussions, fournir des commentaires perspicaces sur les messages des autres et partager des ressources précieuses. En vous établissant en tant que membre engagé et bien informé de la communauté, vous améliorez la visibilité de votre blog, gagnez en crédibilité et attirez des lecteurs fidèles.
 
@@ -77,8 +77,7 @@ _Cas de [LNbits](https://legend.lnbits.com/?):_
 
 LNbits est un portefeuille Bitcoin Lightning Network non-custodial et Nostr est un protocole distribué. L'intégration de LNbits dans Nostr permettrait aux utilisateurs d'effectuer des transactions Bitcoin en utilisant le réseau Lightning sur le protocole Nostr via les clients.. D'un point de vue mathématique, le Lightning Network est une solution de deuxième couche (L2) qui permet des transactions Bitcoin rapides et à faible coût en créant des canaux de paiement entre les utilisateurs. Ces canaux de paiement sont essentiellement des transactions Bitcoin multi-signatures qui sont hors chaîne et ne nécessitent pas de confirmation par le réseau Bitcoin. Le portefeuille LNbits utilise des algorithmes mathématiques avancés et des techniques cryptographiques pour gérer ces canaux de paiement et permettre des transactions Bitcoin sécurisées et privées. L'intégration de LNbits dans Nostr fournit aux utilisateurs un moyen convivial et sécurisé de gérer les canaux de paiement Lightning Network et d'effectuer des transactions Bitcoin sur Nostr.
 
-                                                                  E(X)= α*T + β*C + γ*P
-
+                                                   E(X)= α*T + β*C + γ*P
 Où :
 
 E(X) représente l'espérance des transactions Bitcoin sur Nostr avec LNbits,
@@ -90,7 +89,7 @@ C désigne les coûts associés aux transactions Bitcoin,
 P symbolise la confidentialité des transactions Bitcoin sur Nostr.
 En combinant ces facteurs dans une équation stochastique, nous pouvons prédire que les transactions Bitcoin effectuées sur Nostr avec LNbits seront ultra-rapides (T), avec des frais minimes (C) et une sécurité renforcée (P). Le tout grâce à l'utilisation du puissant Lightning Network (α), qui booste la vitesse et réduit les coûts comme un vrai champion.
 
-cette formule nous montre que Nostr + LNbits = des transactions Bitcoin éclairs à moindre coût, avec une confiance totale en la sécurité et la confidentialité de nos échanges. 
+Cette formule nous montre que Nostr + LNbits = des transactions Bitcoin éclairs à moindre coût, avec une confiance totale en la sécurité et la confidentialité de nos échanges. 
 
 En d'autres termes, l'intégration de Nostr et LNbits permet d'obtenir des transactions Bitcoin plus rapides et à moindre coût en moyenne par rapport aux méthodes traditionnelles, tout en prenant en compte les fluctuations et les incertitudes inhérentes au réseau et aux frais associés. Cela ouvre de nouvelles perspectives pour une expérience de paiement améliorée et plus économique dans l'écosystème Bitcoin.
 
