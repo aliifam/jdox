@@ -18,7 +18,7 @@ La facilité avec laquelle nous pouvons désormais publier des blogs sur Nostr e
 
 ![Blogstack](https://pbs.twimg.com/media/Fn9HjaOX0AAsx6Q?format=jpg&name=medium)
 
-[Habla News](https://habla.news/) est une autre plate-forme de blogging basée sur Nostr qui fournit à un éditeur [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG), une double fenêtre d'édition et de révision pour les rédacteurs de contenu. Habla offre un éditeur markdown et une barre d'outils pour vous aider si vous ne maitrisez pas bien markdown et des champs supplémentaires, pour un titre, une limace, une image de bannière, des balises et un résumé.
+[Habla](https://habla.news/) est une autre plate-forme de blogging basée sur Nostr qui fournit à un éditeur [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG), une double fenêtre d'édition et de révision pour les rédacteurs de contenu. Habla offre un éditeur markdown et une barre d'outils pour vous aider si vous ne maitrisez pas bien markdown et des champs supplémentaires, pour un titre, une limace, une image de bannière, des balises et un résumé.
 
 ![Habla](https://pbs.twimg.com/media/F1E41z6agAEsZ-c?format=jpg&name=medium)
 
