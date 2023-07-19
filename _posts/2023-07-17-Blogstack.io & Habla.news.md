@@ -16,11 +16,11 @@ La facilité avec laquelle nous pouvons désormais publier des blogs sur Nostr e
 
 [Blogstack](https://blogstack.io/) est une plate-forme de blogging de type Medium construite sur le protocole Nostr, qui permet aux utilisateurs de se connecter facilement avec leur clé privée Nostr et d'avoir une expérience de blogging similaire. Blogstack offre un éditeur markdown, pas de champs supplémentaires.
 
-[Blogstack](https://pbs.twimg.com/media/Fn9HjaOX0AAsx6Q?format=jpg&name=medium)
+![Blogstack](https://pbs.twimg.com/media/Fn9HjaOX0AAsx6Q?format=jpg&name=medium)
 
 [Habla News](https://habla.news/) est une autre plate-forme de blogging basée sur Nostr qui fournit à un éditeur [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG), une double fenêtre d'édition et de révision pour les rédacteurs de contenu. Habla offre un éditeur markdown et une barre d'outils pour vous aider si vous ne maitrisez pas bien markdown et des champs supplémentaires, pour un titre, une limace, une image de bannière, des balises et un résumé.
 
-[Habla](https://pbs.twimg.com/media/F1E41z6agAEsZ-c?format=jpg&name=medium)
+![Habla](https://pbs.twimg.com/media/F1E41z6agAEsZ-c?format=jpg&name=medium)
 
 Lorsque vous publiez du contenu sur l'un de ces clients de blogs, vous constaterez que les messages seront identiques sur les deux plateformes mais pas accessibles sur les autres clients de réseaux sociaux comme Damus ou Primal utilisant le même protocole et même s'ils sont diffusés via les mêmes relais. De plus, vos contenus de blog ne seront pas automatiquement ajoutés à vos flux de contenu abrégé, ce qui signifie que vous devrez republier le lien à chaque fois que vous créez un nouvel article de blog. Cependant, vos abonnés sur Nostr pourront toujours commenter vos blogs et vous soutenir en utilisant leurs comptes habituels.
 
@@ -33,7 +33,7 @@ Pour publier en utilisant habla.news et blogstack.io, vous devez installer l'ext
 
 Nostr offre une plate-forme résistante à la censure qui permet aux journalistes et aux lanceurs d'alerte de publier en dernier recours. Dans cette perspective, considérons que le message des lanceurs d'alerte représente le signal pur, constituant ainsi l'objectif principal de la communauté Nostr.
 
-[Important](https://lh3.googleusercontent.com/yVCVL534a8kQ6YjWuc7tMIorZtqhB05AnON1-UnQj6ZYIzdo47p9ytXBw0lWBhbH00KqJi7PMioPZFt93H_pLuArJf_0Ldt-3Jtts4-Vm1OMJ1GkkEFhpgQN3MS1xzumOHbplURchK40ipq83ZjS_TU)
+![Important](https://lh3.googleusercontent.com/yVCVL534a8kQ6YjWuc7tMIorZtqhB05AnON1-UnQj6ZYIzdo47p9ytXBw0lWBhbH00KqJi7PMioPZFt93H_pLuArJf_0Ldt-3Jtts4-Vm1OMJ1GkkEFhpgQN3MS1xzumOHbplURchK40ipq83ZjS_TU)
 
 _Décentralisation: autonomiser la propriété et le contrôle_(Créez un contenu plus engageant et interactif sur nostr)
 
@@ -75,7 +75,7 @@ Cependant, la migration vers Blogstack et Habla nécessite un effort initial, ma
 
 Les utilisateurs de Nostr tels que les blogueurs sur Blogstack ou Habla, pourraient se donner un pourboire puisqu'il tire parti du réseau Lightning, mais le protocole et ses clients ont commencé à fusionner les deux plus étroitement en déployant un nouveau NIP.
 
-[Snowden & Lightning](https://preview.redd.it/snowden-on-nostr-says-lightning-feels-like-another-planet-v0-qbwkt6sel0ea1.jpg?width=640&crop=smart&auto=webp&s=9f99f666105694d9d48ea31b88ecf32ff50f7981)
+![Snowden & Lightning](https://preview.redd.it/snowden-on-nostr-says-lightning-feels-like-another-planet-v0-qbwkt6sel0ea1.jpg?width=640&crop=smart&auto=webp&s=9f99f666105694d9d48ea31b88ecf32ff50f7981)
 
 Le 'NIP-57' définit un nouveau type de note appelé "Zap" Lightning qui représente les reçus de facture de bitcoin lightning payés envoyés par un Lightning node appelé zapper. Zap demande que les notes saisissent les données d'une facture Lightning, à savoir le montant de paiement, le bénéficiaire & le payeur, puis forment un nouvel événement qui peut être capturé par des relais et affiché par les clients. Recevoir de Zap sur nostr permet aux clients d'afficher les paiements Lightning de différents utilisateurs sur le réseau. Ces zaps peuvent être utilisés pour donner des pourboires aux utilisateurs, payer des biens et des services, débloquer du contenu & peuvent même être utilisés pour dissuader le spam.. Cette intégration du réseau Lightning permet aux utilisateurs de Nostr d'effectuer des transactions instantanées et sécurisées au sein du réseau.
 
@@ -124,7 +124,7 @@ Les plateformes de médias sociaux décentralisées utilisent souvent la blockch
 
 Ce ne sont là que quelques approches et concepts généraux utilisés dans les médias sociaux décentralisés. Il est important de noter que la mise en œuvre et les caractéristiques spécifiques d'une plate-forme de médias sociaux décentralisée peuvent varier en fonction du projet et de ses objectifs. Cependant, les plateformes de médias sociaux décentralisées peuvent également faire face à des défis, tels qu'une faible adoption par les utilisateurs et un manque de modèles de revenus clairs. Le choix entre les plates-formes de blogs centralisées et décentralisées dépend de facteurs tels que le contrôle, la résistance à la censure, l'infrastructure et la collaboration communautaire. Les plates-formes centralisées offrent commodité et accessibilité, mais viennent avec des limites potentielles de contrôle et de censure. Les plates-formes décentralisées offrent un contrôle accru, une résistance à la censure et une collaboration communautaire, mais peuvent nécessiter plus d'expertise technique et faire face à des défis d'évolutivité. Comprendre ces différences systémiques permet aux créateurs de contenu de prendre des décisions éclairées en fonction de leurs priorités et de leurs valeurs lors du choix d'une plate-forme de blogging.
 
-[protocole distribué & décentralisé](https://miro.medium.com/v2/resize:fit:1400/1*E5Dsw1S57O2jnolbob_l6A.png)
+![protocole distribué & décentralisé](https://miro.medium.com/v2/resize:fit:1400/1*E5Dsw1S57O2jnolbob_l6A.png)
 
 En outre, certaines plates-formes décentralisées ont eu du mal à faire face à l'évolutivité et n'ont pas encore atteint le niveau d'engagement des utilisateurs observé sur les plates-formes centralisées plus établies.
 
@@ -132,7 +132,7 @@ En outre, certaines plates-formes décentralisées ont eu du mal à faire face �
 
 [Nostr](https://github.com/nostr-protocol/nostr) (Notes and Other Stuff Transmitted by Relays) est bien plus qu'un simple protocole de relais de messages. Il incarne la résistance à la censure, s'inspirant de la robustesse du protocole HTTP qui échappe à toute forme de censure. Même si HTTPS renforce la confidentialité des paquets, il ne garantit pas que l'application côté utilisateur ne soit pas soumise à des filtres. Nostr, quant à lui, est l'outil parfait, agissant comme un couteau suisse, placé judicieusement là où il est nécessaire. L'atout majeur de Nostr réside dans son filtre côté client (NIP 1), un mécanisme souple et facile à étendre. Cette flexibilité permet à Nostr de s'adapter à différentes politiques, implémentations de modules, utilisateurs, agrégateurs, systèmes de mise en cache, proxies, etc. En somme, il se fond dans tout environnement, en respectant les spécificités de chaque relais.
 
-[NIP-01](https://res.cloudinary.com/practicaldev/image/fetch/s--FehYYZ0r--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nigmqeu7ft05ak632v6y.png)
+![NIP-01](https://res.cloudinary.com/practicaldev/image/fetch/s--FehYYZ0r--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nigmqeu7ft05ak632v6y.png)
 
 Nostr répond aux aspirations des blogueurs qui souhaitent un monde sans censure. Ce protocole distribué et systémique s'appuie sur la cryptographie et l'implémentation de nœuds, conçu par des utilisateurs de réseaux sociaux et des partisans de la décentralisation. Chaque module d'implémentation renforce les capacités du protocole, étendant ainsi ses fonctionnalités. C'est un puissant outil de résistance à la censure, soutenu par des principes distribués et cryptographiques, développé par une communauté passionnée de réseaux sociaux et de décentralisation. Le "NIP-05" ouvre les portes d'un éventail de services de communication autonomes, robustes et polyvalents. Il peut même être appliqué à des serveurs SMTP ou à des services d'e-mail. Il s'applique avec brio aux serveurs "SMTP" et aux services d'e-mail, déjouant toute tentative d'usurpation d'adresse e-mail grâce à l'invulnérabilité des "nsec" ou des clés privées propres à Nostr. Ce protocole révolutionnaire peut même remplacer les communications par courrier électronique dans les bureaux. Imaginez une entreprise où Bob communique avec ses employés via un client de chat basé sur Nostr. Fini les soucis d'Alice, sa secrétaire, recevant de faux messages d'inconnus ou de prétendus supérieurs (eavedroppers) cherchant à obtenir des transferts d'argent ou des codes d'accès à des modules secrets. En un clic, Bob peut alerter qu'il est le vrai patron, car l'imposteur ne dispose pas de la bonne signature. Nostr offre cette sécurité inégalée, éliminant les risques d'usurpation d'identité. 
 
