@@ -179,7 +179,7 @@ eve.manipulate_routing(payment, target_channel=channel3)
 ```
 Extrait de code Python simplifié représentant une implémentation hypothétique d'une attaque Wormhole.
 
-<h3><p><a href="https://eprint.iacr.org/2018/472.pdf" target="_blank" rel="noopener noreferrer">Stratégies d'Atténuation</a>:</p></h3>
+<h3><a href="https://eprint.iacr.org/2018/472.pdf" target="_blank" rel="noopener noreferrer">Stratégies d'Atténuation</a>:</h3>
 
 Prévenir les attaques Wormhole nécessite une approche multidimensionnelle impliquant à la fois la conception du protocole et le comportement solennel des nœuds. Voici quelques stratégies à envisager:
 
