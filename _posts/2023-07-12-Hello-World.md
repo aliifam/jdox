@@ -2,9 +2,10 @@
 layout: post
 title: Hello World!
 description: Chroniques du Dark Web, Cryptographie & la révolution Bitcoin.
+author: Komi Segnibo
 tags: quotidien bitcoin
 image: https://res.cloudinary.com/notee/image/upload/v1640412430/notes/hello-world.jpg
-thumb: https://github.com/Ferrerkomi/segnibokomi.github.io/blob/main/img/thumb/readme.jpeg
+thumb: /img/thumb/readme.jpeg
 ---
 
 _**Bonjour la plèbe**_!
