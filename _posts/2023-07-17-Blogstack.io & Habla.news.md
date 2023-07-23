@@ -5,18 +5,20 @@ description: Stratégies techniques pour promouvoir son blog personnel sur le pr
 author: Komi Segnibo
 tags: quotidien nostr cryptographie
 image: https://uploads-ssl.webflow.com/641d33e0ff5853016df4510b/641d66781b539db689d60ef7_blogstack.svg
-thumb: https://global-uploads.webflow.com/62e09c5c16206d3eb071a8e2/64060bfe29753b9112516fa4_what%20is%20Nostr_-Desktop.jpg
+thumb: /img/thumb/Nostr-logo.jpeg
 ---
+
+<h3>Analogie</h3>
 
 Dans le vaste univers numérique, se démarquer et promouvoir son blog personnel peut se révéler une tâche ardue. Cependant, une lueur d'espoir émerge avec l'avènement des plateformes de blogs décentralisées telles que "[Blogstack](https://github.com/nodetec/blogstack) et [Habla](https://github.com/verbiricha/habla.news)": (Blogs décentralisés avec relais via nostr et lightning tips), de nouvelles opportunités se présentent pour les blogueurs de promouvoir efficacement leur contenu tout en profitant des avantages de la "décentralisation". Les réseaux sociaux décentralisés sont un type de plate-forme de réseaux qui utilise une technologie décentralisée, telle que la blockchain, pour stocker et transmettre des données. Cela signifie que la plate-forme n'est pas contrôlée par une seule entité ou organisation, mais fonctionne plutôt sur un réseau distribué d'ordinateurs. Dans cet article technique, nous aborderons quelques arguments et stratégies pour vous aider à promouvoir votre blog personnel en utilisant Blogstack ou Habla. En effet, l'un des plus grands défis auxquels les blogueurs sont confrontés aujourd'hui est la question de la centralisation. La plupart des plateformes de blogs sont détenues et exploitées par de grandes entreprises, ce qui signifie que les blogueurs sont soumis aux politiques et aux règles de ces entreprises. En cas de violation de ces politiques, un blogueur risque de voir son contenu supprimé ou son compte suspendu, ce qui pourrait le réduire au silence.
 
-**Systémique de Blogstack & Habla:**
+<h3>Systémique de Blogstack & Habla:</h3>
 
-[Blogstack](https://blogstack.io/) est une plate-forme de blogging de type Medium construite sur le protocole Nostr, qui permet aux utilisateurs de se connecter facilement avec leur clé privée Nostr et d'avoir une expérience de blogging similaire. Blogstack offre un éditeur markdown, pas de champs supplémentaires.
+_[Blogstack](https://blogstack.io/)_ est une plate-forme de blogging de type Medium construite sur le protocole Nostr, qui permet aux utilisateurs de se connecter facilement avec leur clé privée Nostr et d'avoir une expérience de blogging similaire. Blogstack offre un éditeur markdown, pas de champs supplémentaires.
 
 ![Blogstack](https://pbs.twimg.com/media/Fn9HjaOX0AAsx6Q?format=jpg&name=medium)
 
-[Habla](https://habla.news/) est une autre plate-forme de blogging basée sur Nostr qui fournit à un éditeur [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG), une double fenêtre d'édition et de révision pour les rédacteurs de contenu. Habla offre un éditeur markdown et une barre d'outils pour vous aider si vous ne maitrisez pas bien markdown et des champs supplémentaires, pour un titre, une limace, une image de bannière, des balises et un résumé.
+_[Habla](https://habla.news/)_ est une autre plate-forme de blogging basée sur Nostr qui fournit à un éditeur [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG), une double fenêtre d'édition et de révision pour les rédacteurs de contenu. Habla offre un éditeur markdown et une barre d'outils pour vous aider si vous ne maitrisez pas bien markdown et des champs supplémentaires, pour un titre, une limace, une image de bannière, des balises et un résumé.
 
 Récemment, Habla vient de bénéficier d'une mise à jour majeure pour offrir des URLs plus conviviales aux utilisateurs. Désormais, par défaut, les URLs seront lisibles, grâce à l'utilisation de nip05 et de l'identifiant d'article. Les utilisateurs de Habla nip05 profiteront également d'URLs de pré-rendu, plus courtes et faciles à partager.
 
@@ -30,41 +32,41 @@ La communication entre Blogstack et Habla implique probablement l'échange de do
 
 Pour publier en utilisant habla.news ou blogstack.io, vous devez installer l'extension getalby et configurer les clés de connexion nécessaires. Cela vous permettra de bénéficier des fonctionnalités offertes par ces plateformes décentralisées et de promouvoir efficacement votre blog personnel. Car nous vivons dans un monde étrange de cybersécurité où le cryptage n'implique pas seulement la confidentialité des données mais également la vérification de l'intégrité et la mise en place d'une confiance numérique. Parallèlement à cela, il existe de nombreuses façons de mettre en œuvre des méthodes, y compris la dérivation de la clé, l'intégration de la clé publique, les méthodes de hachage et les modes de cryptage.
 
-**Pourquoi migrer votre blog vers Nostr ?**
+<h3>Pourquoi migrer votre blog vers Nostr ?</h3>
 
 Nostr offre une plate-forme résistante à la censure qui permet aux journalistes et aux lanceurs d'alerte de publier en dernier recours. Dans cette perspective, considérons que le message des lanceurs d'alerte représente le signal pur, constituant ainsi l'objectif principal de la communauté Nostr. La facilité avec laquelle nous pouvons désormais publier des blogs sur Nostr est tout simplement impressionnante. Aucun besoin de gérer un serveur compliqué. Le rendu est superbe, surtout avec des clients comme Blogstack, Habla, Damus et d'autres. Cela constitue une véritable révolution dans le domaine du blogging, car l'une des principales raisons pour lesquelles on pouvait rarement publier son propre blog était les tracas incessants que cela impliquait: _Héberger un serveur ou s'inscrire sur une plate-forme centralisée était souvent fastidieux. Si vous décidez de gérer votre propre site, vous devez jongler avec des fichiers git et des générateurs de sites statiques (mon blog par exemple), ou faire face aux complications de WordPress. C'est un véritable casse-tête!_ Mais avec Nostr, tout a changé en mieux! Vous n'avez qu'à vous rendre sur Blogstack.io, habla.news, pousser la publication, et en un clin d'œil, vos blogs sont accessibles à tous les clients et diffusés dans les flux des personnes qui vous suivent. Soit, héberger un blog personnel en utilisant Nostr comme backend, le déployer sur 'vercel' en un seul clic tout en configurant les variables d'environnement et utiliser Blogstack.io, Habla.news, write.nostr.com pour modifier ou créer des contenus.
 
 ![Important](https://lh3.googleusercontent.com/yVCVL534a8kQ6YjWuc7tMIorZtqhB05AnON1-UnQj6ZYIzdo47p9ytXBw0lWBhbH00KqJi7PMioPZFt93H_pLuArJf_0Ldt-3Jtts4-Vm1OMJ1GkkEFhpgQN3MS1xzumOHbplURchK40ipq83ZjS_TU)
 
-_Décentralisation: autonomiser la propriété et le contrôle_(Créez un contenu plus engageant et interactif sur nostr)
+- _Décentralisation: autonomiser la propriété et le contrôle_(Créez un contenu plus engageant et interactif sur nostr)
 
 L'un des principaux avantages de l'utilisation de Blogstack et Habla pour promouvoir son blog personnel est l'autonomisation de la propriété et du contrôle des contenus. Contrairement aux plates-formes centralisées, qui peuvent exercer un contrôle sur votre contenu et imposer des limitations, les plates-formes décentralisées vous permettent d'avoir une autonomie complète. Cette propriété établit non seulement la crédibilité, mais garantit également que votre contenu n'est pas affecté par des facteurs externes tels que la censure ou des changements soudains de politique abusive.
 
-_Sécurité et confidentialité renforcées:_
+- _Sécurité et confidentialité renforcées:_
 
 La confidentialité et la sécurité sont des préoccupations primordiales pour les blogueurs et leurs lecteurs. En tirant parti de Blogstack et Habla, vous pouvez bénéficier des mesures de sécurité renforcées inhérentes aux protocoles décentralisés. Au fur et à mesure que le contenu est distribué sur un réseau de nodes ou noeuds via les principaux relais du protocole Nostr, le risque de violation de données ou d'accès non autorisé est considérablement réduit. Cette confiance dans la sécurité favorise un sentiment de fiabilité parmi vos lecteurs, attirant plus de personnes à s'engager avec votre blog.
 
-_Syndication de contenu: amplification de la portée et de la visibilité_
+- _Syndication de contenu: amplification de la portée et de la visibilité_
 
 La syndication de contenu est une stratégie puissante pour étendre la portée de votre blog personnel. Avec Blogstack et Habla, la syndication devient transparente et sans tracas. En utilisant les capacités de syndication intégrées des plates-formes, vous pouvez automatiquement distribuer votre contenu à diverses plates-formes, telles que les réseaux de médias sociaux, les agrégateurs de contenu organisés ou d'autres communautés de blogs. Cela amplifie votre portée, expose votre contenu à de nouveaux publics et ramène le trafic vers votre blog personnel.
 
-_Interopérabilité: maximiser l'adaptabilité et l'exposition_
+- _Interopérabilité: maximiser l'adaptabilité et l'exposition_
 
 L'un des avantages remarquables de Blogstack et Habla est leur engagement en faveur de l'interopérabilité. Les protocoles interopérables garantissent que votre contenu peut être facilement réaffecté et adapté sur plusieurs plates-formes et supports. En créant un contenu adaptable, vous pouvez adapter vos billets de blog à différents canaux, tels que des extraits de médias sociaux, des podcasts, des vidéos ou des infographies. Cela maximise l'exposition, attire des publics diversifiés et favorise l'engagement avec votre blog personnel.
 
-_Engagement communautaire et collaboration:_
+- _Engagement communautaire et collaboration:_
 
 S'engager avec la communauté est crucial pour promouvoir efficacement votre blog personnel. Blogstack et Habla fournissent des communautés dynamiques de personnes partageant les mêmes idées, offrant de nombreuses possibilités d'interaction et de collaboration. Participer activement aux discussions, fournir des commentaires perspicaces sur les messages des autres et partager des ressources précieuses. En vous établissant en tant que membre engagé et bien informé de la communauté, vous améliorez la visibilité de votre blog, gagnez en crédibilité et attirez des lecteurs fidèles.
 
-_Tirer parti des analyses et des mesures:_ Recueillez les idées que vous trouvez sur nostr et transformez-en une pièce longue.
+- _Tirer parti des analyses et des mesures:_ Recueillez les idées que vous trouvez sur nostr et transformez-en une pièce longue.
 
 Comprendre votre public et analyser son comportement est essentiel pour une promotion efficace du blog. Blogstack et Habla offrent des outils d'analyse et de mesure robustes pour vous aider à obtenir des informations sur votre lectorat. L'analyse de données telles que les pages vues, les taux de rebond et l'engagement des utilisateurs peut guider votre stratégie de contenu et vous permettre d'optimiser les performances de votre blog. En surveillant et en affinant en permanence votre approche, vous pouvez adapter votre contenu pour mieux répondre aux préférences de votre public et stimuler la croissance.
 
-_Tokenisation et incitations:_ 
+- _Tokenisation et incitations:_ 
 
 Certaines plateformes de médias sociaux décentralisées utilisent des tokens ou des cryptomonnaies pour encourager la participation des utilisateurs, la création de contenu et la modération. Les tokens peuvent être récompensés aux utilisateurs qui apportent un contenu précieux ou qui effectuent des actions bénéfiques sur la plate-forme. C'est le cas de Blogstack & de Habla: Avoir une publication et un compte qui sont automatiquement monétisés pour accepter les dons en Bitcoin.
 
-_Interaction client-relais:_ 
+- _Interaction client-relais:_ 
 
 les relais jouent un rôle crucial dans le protocole Nostr et donc indispensable pour Blogstack ou Habla. Ils facilitent la livraison efficace du contenu en réduisant la latence et en optimisant le routage. Les lecteurs qui accèdent à votre blog à partir de différents emplacements géographiques connaissent des temps de chargement plus rapides, améliorant ainsi leur expérience de navigation et leur engagement avec votre contenu. Les utilisateurs doivent être en mesure de choisir les relais sur lesquels, doivent être publiés leurs articles ou quelconques notes, assurant ainsi l'autonomie et la décentralisation des utilisateurs. Les relais devraient servir d'intermédiaires transparents, en facilitant la transmission de données entre les utilisateurs et en assurant l'intégrité de Blogstack ou Habla.
 
@@ -74,7 +76,7 @@ Cependant, la migration vers Blogstack et Habla nécessite un effort initial, ma
 
 ![Rapport de Jack sur Habla](https://nostr.build/i/88b6a0f291e78f6d10171db4883de9f96a711621abd57c2961559262ac8cd456.jpg)
 
-**Qu'est-ce qu'un zap ?**
+<h3>Qu'est-ce qu'un zap ?</h3>
 
 Les utilisateurs de Nostr tels que les blogueurs sur Blogstack ou Habla, pourraient se donner un pourboire puisqu'il tire parti du réseau Lightning, mais le protocole et ses clients ont commencé à fusionner les deux plus étroitement en déployant un nouveau NIP.
 
@@ -109,7 +111,7 @@ Cette formule nous montre que Nostr + LNbits = des transactions Bitcoin éclairs
 
 En d'autres termes, l'intégration de Nostr et [LNbits](https://github.com/lnbits/lnbits) permet d'obtenir des transactions Bitcoin plus rapides et à moindre coût en moyenne par rapport aux méthodes traditionnelles, tout en prenant en compte les fluctuations et les incertitudes inhérentes au réseau et aux frais associés. Cela ouvre de nouvelles perspectives pour une expérience de paiement améliorée et plus économique dans l'écosystème Bitcoin.
 
-**Comment les plateformes de médias sociaux décentralisées sont généralement conçues & mises en œuvre ?** 
+<h3>Comment les plateformes de médias sociaux décentralisées sont généralement conçues & mises en œuvre ?</h3> 
 
 Les plateformes de médias sociaux décentralisées utilisent souvent la blockchain ou d'autres technologies de registre distribué pour parvenir à la décentralisation. Voici quelques éléments et approches clés qui sont couramment utilisés:
 
@@ -131,7 +133,7 @@ Ce ne sont là que quelques approches et concepts généraux utilisés dans les 
 
 En outre, certaines plates-formes décentralisées ont eu du mal à faire face à l'évolutivité et n'ont pas encore atteint le niveau d'engagement des utilisateurs observé sur les plates-formes centralisées plus établies.
 
-**Systémique du protocole Nostr:**
+<h3>Systémique du protocole Nostr:</h3>
 
 [Nostr](https://github.com/nostr-protocol/nostr) (Notes and Other Stuff Transmitted by Relays) est bien plus qu'un simple protocole de relais de messages. Il incarne la résistance à la censure, s'inspirant de la robustesse du protocole HTTP qui échappe à toute forme de censure. Même si HTTPS renforce la confidentialité des paquets, il ne garantit pas que l'application côté utilisateur ne soit pas soumise à des filtres. Nostr, quant à lui, est l'outil parfait, agissant comme un couteau suisse, placé judicieusement là où il est nécessaire. L'atout majeur de Nostr réside dans son filtre côté client (NIP 1), un mécanisme souple et facile à étendre. Cette flexibilité permet à Nostr de s'adapter à différentes politiques, implémentations de modules, utilisateurs, agrégateurs, systèmes de mise en cache, proxies, etc. En somme, il se fond dans tout environnement, en respectant les spécificités de chaque relais.
 
@@ -147,9 +149,10 @@ Que vous soyez journaliste, blogueur ou spécialiste du marketing de contenu, Bl
 
 ![Nostr relays](https://imageio.forbes.com/specials-images/imageserve/642f3f78d4b9aee6f03c0b56/How-Nostr-relays-work--When-Alice-presses--send--her-message-is-transmitted-from-to/960x0.jpg?height=399&width=711&fit=bounds)
 
-**Conclusion:**
+<h3>Conclusion:</h3>
 
 La promotion d'un blog personnel nécessite une approche technique qui tire parti des capacités de Blogstack, Habla, Alby, LNbits (Zaps), des relais et des configurations. En utilisant Blogstack et Habla pour la création et la syndication de contenu, vous pouvez atteindre un public plus large et établir votre blog comme une ressource incontournable dans votre créneau. L'intégration d'Alby et du module Zap améliore les performances des clients Bolgstack et Habla.news, les options de monétisation et l'engagement des lecteurs. L'exécution de relais et l'optimisation de la configuration de votre blog contribuent à une infrastructure robuste et à une meilleure visibilité. En utilisant une signature cryptographique pour signer le contenu généré par les utilisateurs, Blogstack ou Habla s'assure que chaque élément du contenu est unique, authentique et inviolable. Adoptez donc, le potentiel de Blogstack et Habla pour ouvrir de nouveaux horizons pour votre parcours de blogging personnel. Avec des plateformes comme Blogstack et Habla, vous avez la liberté de publier et de posséder votre contenu tout en tirant parti de la syndication et des stratégies de création de contenu adaptables pour amplifier votre portée.
 Blogstack et Habla représentent un nouveau développement passionnant dans le monde des blogs. En fournissant une plate-forme plus démocratique, décentralisée et sécurisée permettant aux blogueurs de partager leur contenu, ces clients du protocole nostr pourraient aider à créer un écosystème de blogs (blogosphère) plus dynamique et plus diversifié. Choisissez Blogstack ou Habla pour faire passer votre contenu au niveau supérieur et atteindre votre public de manière nouvelle et innovante. Si vous êtes un rédacteur de contenus et que vous ne voyez pas la puissance d'outils tels que Nostr, Blogstack ou Habla, vous devez regarder à nouveau. _Nous sommes au début de l'une des technologies les plus perturbatrices jamais créées depuis la création d'Internet._
 
+--------------------------------
 _Retrouvez-moi sur Nostr: npub1s8fcg6f3xzyveeft32rqwywzre6q3pszs6ansd9y6a86kutumchqa07p4z_
