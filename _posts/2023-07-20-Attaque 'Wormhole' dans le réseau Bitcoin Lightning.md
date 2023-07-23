@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Attaque 'Wormhole' dans le réseau Bitcoin Lightning
-description: Analyse complète & considérations futures.
+description: Analyses & considérations futures.
 tags: quotidien ₿itcoin ⚡ Cryptographie
 image: /img/seo/attack-bitcoin.jpeg
 thumb: /img/thumb/bitcoin_lightning.jpeg
@@ -53,7 +53,7 @@ Comme indiqué dans le BIP, ECDSA est normalisé. Cette formulation étant norma
 
 - _[Schnorr](https://github.com/bitcoin/bips/blob/master/bip-0340.mediawiki)-[Taproot](https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki): 3 [BIPs](https://github.com/bitcoin/bips) individuelles: Signature Schnorr (BIP 340), Taproot (BIP 341), Tapscript (BIP 342)._ 
 
-Cette innovation récente dans Bitcoin introduit la signature Schnorr, qui offre des avantages en termes d'efficacité et de confidentialité. La mise à niveau de Taproot améliore encore la flexibilité et la confidentialité des contrats intelligents de Bitcoin. La signature Schnorr est également basée sur le problème du logarithme discret. Il offre une agrégation de signatures plus efficace et peut améliorer la confidentialité dans les scénarios multi-signatures: Tous les scripts/sigs semblent indiscernables. Même le multisig ou Lightning ressemble à une seule signature; Tous les scripts/sigs sont de la même taille 'même plus de 20 touches prennent l'espace de 1', Le calcul nécessaire pour valider est uniforme; Aussi une plus grande flexibilité sans renoncer à la confidentialité ou au coût des données. Entrave également les débuts de "l'agrégation de sig d'entrée croisée" (Fondamentalement, nous pouvons combiner les clés/signatures publiques de personnes différentes en une seule clé/signature publique). Idéal pour la confidentialité, l'efficacité et rend le 'coinjoining' plus économique qu'une transaction normale.
+Cette innovation récente dans Bitcoin introduit la signature Schnorr, qui offre des avantages en termes d'efficacité et de confidentialité. La mise à niveau de Taproot améliore encore la flexibilité et la confidentialité des contrats intelligents de Bitcoin. La signature Schnorr est également basée sur le problème du logarithme discret. Il offre une [agrégation](https://schmiste.github.io/aft22.pdf) de signatures plus efficace et peut améliorer la confidentialité dans les scénarios multi-signatures: Tous les scripts/sigs semblent indiscernables. Même le multisig ou Lightning ressemble à une seule signature; Tous les scripts/sigs sont de la même taille 'même plus de 20 touches prennent l'espace de 1', Le calcul nécessaire pour valider est uniforme; Aussi une plus grande flexibilité sans renoncer à la confidentialité ou au coût des données. Entrave également les débuts de "l'agrégation de sig d'entrée croisée" (Fondamentalement, nous pouvons combiner les clés/signatures publiques de personnes différentes en une seule clé/signature publique). Idéal pour la confidentialité, l'efficacité et rend le 'coinjoining' plus économique qu'une transaction normale.
 
 ![Schnorr](https://i.imgur.com/bj2qDUE.png)
 
@@ -207,5 +207,14 @@ En fin de compte, c'est à l'ingénieur du canal de paiement de le juger, mais m
 
 **Conclusion:**
 
-Les attaques Wormhole représentent une menace significative pour la sécurité et la fiabilité du Réseau Lightning de Bitcoin. Il est essentiel que les chercheurs, les développeurs et les participants au réseau comprennent ces vulnérabilités, étudient les contre-mesures potentielles et contribuent aux efforts continus visant à améliorer la sécurité du réseau. De plus, la nature décentralisée du réseau Bitcoin, basée sur le réseau peer-to-peer, garantit qu'aucune entité ne contrôle la majorité de la puissance de calcul du réseau (taux de hachage). Cette décentralisation, ainsi que le concept de preuve de travail (PoW), renforce la sécurité de la blockchain de Bitcoin contre les attaques potentielles, comme la tristement célèbre "attaque de 51 %". En restant vigilants et en collaborant sur les avancées en matière de sécurité, nous pouvons assurer le succès à long terme et l'adoption du Réseau Lightning de Bitcoin tout en protégeant les actifs et la vie privée des utilisateurs.
+Les attaques Wormhole représentent une menace significative pour la sécurité et la fiabilité du Réseau Lightning de Bitcoin. Il est essentiel que les chercheurs, les développeurs et les participants au réseau comprennent ces vulnérabilités, étudient les contre-mesures potentielles et contribuent aux efforts continus visant à améliorer la sécurité du réseau. De plus, la nature décentralisée du réseau Bitcoin, basée sur le réseau peer-to-peer, garantit qu'aucune entité ne contrôle la majorité de la puissance de calcul du réseau (taux de hachage). Cette décentralisation, ainsi que le concept de preuve de travail (PoW), renforce la sécurité de la blockchain de Bitcoin contre les attaques potentielles, comme la tristement célèbre "attaque de 51 %". L'amélioration des fonctionnalités de confidentialité au sein du réseau Bitcoin est devenue une priorité pour de nombreux développeurs, avec des projets tels que les signatures Taproot & Schnorr se concentrant sur l'amélioration de la confidentialité et de la sécurité des transactions. Ces innovations visent à rendre plus difficile pour les tiers de lier les transactions à des utilisateurs spécifiques, augmentant ainsi la confidentialité globale et la fongibilité de Bitcoin. La technologie Bitcoin Blockchain n'est toujours pas assez mature, elle n'est pas systématiquement étudiée et les risques qui l'entourent sont encore inconnus. Une plate-forme Blockchain commune, des normes d'application et une interface de programmation d'application sont nécessaires pour améliorer la perception et l'interaction des utilisateurs. En restant vigilants et en collaborant sur les avancées en matière de sécurité (examiner les vecteurs d'attaque potentiels & concevoir des défenses robustes contre toute menace qui se cache dans l'ombre), nous pouvons assurer le succès à long terme et l'adoption du Réseau Lightning de Bitcoin tout en protégeant les actifs et la vie privée des utilisateurs.
 
+_L'avenir de l'argent est réinventé & le Bitcoin est à l'avant-garde de cette transformation passionnante..._
+
+-----------------------------------
+
+_**Si vous trouvez cet article utile, vous pouvez envoyer des satoshis anonymes pour soutenir mes recherches & évaluations.**_
+
+₿: bc1q475hnpj2akw08sen5kencn4d834ha4unmqc5gx
+
+_⚡ segnibo2@getalby.com_
