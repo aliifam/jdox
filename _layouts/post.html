@@ -29,12 +29,14 @@ layout: default
 
   <nav class="post-nav">
     {% if page.previous %}
-    <a class="post-nav-item post-nav-prev" href="{{ page.previous | relative_url }}">
+    <a class="post-nav-item post-nav-prev" href="{{ page.previous }}">
       <div class="nav-arrow">Previous</div>
       <span class="post-title">{{ page.previous.title }}</span>
     </a>
-    {% endif %} {% if page.next %}
-    <a class="post-nav-item post-nav-next" href="{{ page.next | relative_url }}">
+    {% endif %} 
+	  
+    {% if page.next %}
+    <a class="post-nav-item post-nav-next" href="{{ page.next }}">
       <div class="nav-arrow">Next</div>
       <span class="post-title">{{ page.next.title }}</span>
     </a>
