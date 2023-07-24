@@ -25,11 +25,11 @@ jobs:
         -v ${{ github.workspace }}:/srv/jekyll \
         -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll &&\
-        jekyll build --future -d build"
+        jekyll build --future -d _site"
     
     # Deploy to gh-pages branch
     - name: 🚀 Deploy to Github Pages
       uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
-        branch: gh-pages # The branch the action should deploy to.
-        folder: build # The folder the action should deploy.
+        branch: main # The branch the action should deploy to.
+        folder: _site # The folder the action should deploy.
