@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hello World!
+date: 2023-07-12
 description: Chroniques du Dark Web, Cryptographie & la révolution Bitcoin.
 author: Komi Segnibo
 tags: quotidien bitcoin
