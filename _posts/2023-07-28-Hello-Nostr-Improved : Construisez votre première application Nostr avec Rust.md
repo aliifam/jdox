@@ -5,7 +5,7 @@ date: 2023-07-28
 description: "Une introduction progressive au protocole Nostr, une communication résistante à la censure. De l'installation de Rust et la génération de clés cryptographiques à la publication de messages et la récupération d'événements."
 author: komi Segnibo
 tags: quotidien Nostr Rust Coding
-image: 
+image: -
 thumb: /img/thumb/Nostr_Rust.png
 ---
 
