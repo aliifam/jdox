@@ -458,19 +458,19 @@ _Le programme se connecte avec succès au réseau Nostr et publie la note textue
 
 Au cours du développement de ce projet, plusieurs erreurs ont été rencontrées et gérées de manière élégante pour améliorer la stabilité de l'application et l'expérience utilisateur. Voici les erreurs rencontrées et les corrections correspondantes: (Ceci n'est que mon cas en particulier et peut donc varier selon notre outil de travail...)
 
-<h3> Erreur 1 : Indication que le champ `custom` de la structure `Filter` attend un `Map<String, Value>` </h3>
+_Erreur 1 : Indication que le champ `custom` de la structure `Filter` attend un `Map<String, Value>`_
 
 **Problème** : L'erreur indique que le champ `custom` de la structure `Filter` attend un `Map<String, Value>`, mais une option `Option` a été utilisée par erreur pour `empty_custom`.
 
 _**Correction**_ : Pour résoudre l'erreur, l'option `Option` a été supprimée de `empty_custom` tout en le fournissant comme valeur par défaut pour le champ `custom`.
 
-<h3> Erreur 2 : Types incompatibles pour le champ `custom` de la structure `Filter` </h3>
+_Erreur 2 : Types incompatibles pour le champ `custom` de la structure `Filter`_
 
 **Problème** : L'erreur indique un type incompatible à la ligne 29 pour le champ `authors` dans la structure `Filter`.
 
 _**Correction**_ : La correction consiste à convertir la `XOnlyPublicKey` en `String` en utilisant la méthode `to_string()` pour correspondre au type attendu.
 
-<h3> Erreur 3 : Attendu `(` or `<`, found `<eof>`</h3>
+_Erreur 3 : Attendu `(` or `<`, found `<eof>`_
 
 **Problème** : Cette erreur indique une fin de fichier inattendue (EOF) à la ligne 46. Le problème est probablement une erreur de
 
@@ -478,7 +478,7 @@ _**Correction**_ : La correction consiste à convertir la `XOnlyPublicKey` en `S
 
 _**Correction**_ : Après vérification, il a été constaté que la fonction `main` n'était pas correctement fermée avec une accolade fermante (`}`).
 
-<h3> Erreur 4 : Types incompatibles </h3>
+_Erreur 4 : Types incompatibles_
 
 **Problème** : L'erreur met en évidence un type incompatible à la ligne 43 pour le champ `custom` dans la structure `Filter`.
 
@@ -502,12 +502,11 @@ Cependant, nous avons également rencontré des erreurs lors de l'exécution du 
 
 Avec les améliorations suggérées, nous pouvons étendre ce tutoriel pour construire des applications plus sophistiquées et sécurisées sur le réseau Nostr.
 
-<h2> Remerciements </h2>
+P.s
 
 Le code de ce dépôt est basé sur le tutoriel original "Hello-Nostr" de NostrDevKit. Un grand merci à l'équipe de [NostrDevKit](https://github.com/NostrDevKit) et aux contributeurs: "[Yuki Kishimoto](https://github.com/yukibtc) & [Max Gravitt](https://github.com/mgravitt)" pour leur travail précieux.
 
 Bon développement ! 🚀
-
 ------------------------------------------
 
 _**Si vous trouvez cet article utile, vous pouvez envoyer des satoshis anonymes pour soutenir mes recherches & évaluations.**_
