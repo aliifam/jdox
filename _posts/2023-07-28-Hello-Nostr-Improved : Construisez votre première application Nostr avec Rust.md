@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hello-Nostr-Improved : Construisez votre première application Nostr avec Rust"
+title: "Hello-Nostr-Improved : Construisez votre première application Nostr avec Rust."
 date: 2023-07-28
 description: "Une introduction progressive au protocole Nostr, une communication résistante à la censure. De l'installation de Rust et la génération de clés cryptographiques à la publication de messages et la récupération d'événements."
 author: komi Segnibo
@@ -9,9 +9,9 @@ image:
 thumb: /img/thumb/Nostr_Rust.png
 ---
 
-<h1><a href="https://github.com/Ferrerkomi/Hello-Nostr-Improved">Hello-Nostr-Improved</a></h1>
+<h1><a href="https://github.com/Ferrerkomi/Hello-Nostr-Improved">Hello-Nostr-Improved.</a></h1>
 
-<h2> Analogie </h2>
+<h2> Analogie: </h2>
 
 Dans cet article, nous vous emmènerons dans l'univers fascinant de Nostr, un protocole de communication décentralisé. À l'aide de Rust, nous vous guiderons étape par étape pour construire votre toute première application Nostr. De l'installation de Rust et la génération de clés cryptographiques à la publication de messages et la récupération d'événements, ce tutoriel convivial pour les débutants couvre tout. Rejoignez-nous pour explorer les bases de Nostr, comprendre ses mécanismes sous-jacents et découvrir la magie d'une communication résistante à la 'censure'. Préparez-vous à embarquer pour une aventure passionnante de mise en réseau décentralisé avec Rust et Nostr !
 
@@ -25,20 +25,22 @@ Dans cet article, nous vous emmènerons dans l'univers fascinant de Nostr, un pr
 - Récupère les événements du réseau Nostr en fonction d'un filtre utilisant la clé publique de l'utilisateur.
 - Gestion améliorée des erreurs pour gérer de manière élégante les erreurs réseau, les entrées invalides & les scénarios inattendus.
 
+
 <h2> Prérequis </h2>
 
 - Langage de programmation Rust (version stable la plus récente recommandée).
 - Gestionnaire de paquets 'Cargo'.
 - Protocole Nostr & NostrDevKit.
 
+
 <h2> Démarrage & processus parallèles: </h2>
 
-_<h3> Exécution : </h3>_
+<h3> Exécution:</h3>
 
 **_Le code commence par importer les modules et les types requis. Il définit une constante 'PRIVATE_KEY', représentant une chaîne hexadécimale qui sert de clé privée pour générer des clés cryptographiques. La fonction main, marquée avec l'attribut '#[tokio::main]', est le point d'entrée du programme et gère les tâches asynchrones en utilisant le 'runtime de Tokio'. Dans la fonction 'main', le code génère une paire de clés publique et privée (my_keys) à partir de PRIVATE_KEY en utilisant des opérations cryptographiques. Il crée un client Nostr, ajoute deux relais au client et établit une connexion avec le réseau Nostr. Le code prépare un message textuel contenant la clé publique de l'utilisateur et le publie en tant que note sur le réseau Nostr. Après une pause de 1 seconde (pour permettre à l'événement de se propager sur le réseau), le code récupère les événements en utilisant un filtre basé sur la clé publique de l'utilisateur. Les événements récupérés sont affichés à la console, montrant les Event IDs, les clés publiques, les horodatages de création et le contenu des événements._**
 
 
-_<h3> Installation de Rust </h3>_
+<h3> Installation de Rust </h3>
 
 Si vous avez déjà une installation fonctionnelle du compilateur Rust le plus récent, vous pouvez passer à la section suivante.
 
@@ -48,7 +50,7 @@ Pour installer la dernière version de Rust, nous vous recommandons d'utiliser r
 rustup default stable
 ```
 
-_<h3> Créer un nouveau projet Rust </h3>_
+<h3> Créer un nouveau projet Rust </h3>
 
 ```bash
 cargo new hello-nostr
@@ -94,6 +96,7 @@ fn main() {
 }
 ```
 
+
 <h2> Ajouter la dépendance rust-nostr </h2>
 
 Ouvrez 'Cargo.toml' et ajoutez la dépendance 'rust-nostr'. Vous pouvez vérifier la dernière version de la bibliothèque ou utiliser la méthode ci-dessous.
@@ -106,11 +109,13 @@ nostr-sdk = "*"
 tokio = { version = "1", features = ["full"] }
 ```
 
+
 <h2> Ajoutez l'import en haut du fichier 'main.rs'. </h2>
 
 ```rust
 use nostr_sdk::prelude::*;
 ```
+
 
 <h2> Rendre le programme asynchrone </h2>
 
@@ -123,6 +128,7 @@ async fn main() -> Result<()> {
     Ok(())
 }
 ```
+
 
 <h2> Charger la clé </h2>
 
@@ -142,6 +148,7 @@ println!("Hello, nostr! My public key is: {}", my_keys.public_key().to_string())
 Hello, nostr! My public key is: becd05edf0c858d6d371304bceab3188a8deb8556f4a59052d6aa532a80207a4
 ```
 
+
 <h2> Créer un client et ajouter des relais </h2>
 
 'Nostr' utilise des 'relais' pour recevoir, stocker et interroger les 'événements' (events), et nous utilisons le type 'Client' pour accéder à un relais. Créez un 'client' ou compte et ajoutez deux relais pour recevoir notre message. L'utilisation de plusieurs relais garantit que notre contenu est répliqué et protège les créateurs de la censure. Après avoir ajouté les relais, appelez ou interpeler 'connect()'.
@@ -152,6 +159,7 @@ client.add_relay("wss://relay.house", None).await?;
 client.add_relay("wss://relay.damus.io", None).await?;
 client.connect().await;
 ```
+
 
 <h2> Publier une note texte </h2>
 
@@ -188,6 +196,7 @@ EventId(
     0xa85917ea97989b8a7a70ba8d7af534df2ba0f0c572d21c7fc1a88b4f695634f5,
 )
 ```
+
 
 <h2> Récupérer l'événement </h2>
 
@@ -419,47 +428,49 @@ _**Ces sections contiennent des informations sur les événements récupérés d
 
 Dans ce tutoriel simple, nous avons assuré que la chaîne d'outils 'Rust' était installée, créé un nouveau 'binaire Rust', publié un 'message' (événement) sur plusieurs 'relais' et récupéré le message.
 
+
 <h2> Explication du Code </h2>
 
-_<h3> Génération des Clés </h3>_
+<h3> Génération des Clés </h3>
 
 Le code inclut une fonction pour générer une paire de clés publique & secrète à partir d'une clé privée fournie, "[Nostr POW KeyGen](https://www.nostr.rest/)". Cela est réalisé à l'aide d'opérations cryptographiques et des structures `SecretKey` & `Keys` de la bibliothèque `nostr_sdk`. La gestion améliorée des erreurs garantit que les clés privées invalides sont gérées de manière élégante, évitant ainsi les plantages de l'application.
 
-_<h3> Configuration du Client Nostr </h3>_
+_Configuration du Client Nostr_
 
 L'application configure un client Nostr pour interagir avec le réseau Nostr. Le client se connecte au réseau Nostr et ajoute plusieurs relais pour assurer une communication fiable. Toutes les erreurs survenant pendant le processus de connexion sont correctement gérées pour éviter les perturbations potentielles.
 
-_<h3> Publication d'une Note de Texte </h3>_
+_Publication d'une Note de Texte_
 
 Une note de texte contenant la clé publique de l'utilisateur est publiée sur le réseau Nostr à l'aide de la méthode `publish_text_note`. Le message est propagé et se voit attribuer un identifiant d'événement unique pour référence. L'application affiche l'identifiant de l'événement dans la console pour confirmer la publication.
 
-_<h3> Récupération des Événements </h3>_
+_Récupération des Événements_
 
 Le code met en œuvre un filtre pour récupérer les événements du réseau Nostr en fonction de la clé publique de l'utilisateur. L'application récupère les événements à l'aide de la méthode `get_events_of` et affiche des informations pertinentes telles que les identifiants d'événement, les clés publiques, les horodatages de création et le contenu.
 
-_<h3> Résultat: </h3>_
+_Résultat:_
 
 _Le programme se connecte avec succès au réseau Nostr et publie la note textuelle contenant la clé publique de l'utilisateur. Il récupère des événements du réseau Nostr qui correspondent aux critères du filtre. La sortie affiche les Event IDs, les clés publiques, les horodatages de création et le contenu des événements récupérés._
 
 **_Le code peut récupérer des événements en double en raison de plusieurs relais dans le réseau Nostr, ce qui entraîne la propagation des événements par différents chemins._**
 
+
 <h2> Gestion des Erreurs et Corrections </h2>
 
 Au cours du développement de ce projet, plusieurs erreurs ont été rencontrées et gérées de manière élégante pour améliorer la stabilité de l'application et l'expérience utilisateur. Voici les erreurs rencontrées et les corrections correspondantes: (Ceci n'est que mon cas en particulier et peut donc varier selon notre outil de travail...)
 
-_<h3> Erreur 1 : Indication que le champ `custom` de la structure `Filter` attend un `Map<String, Value>` </h3>_
+<h3> Erreur 1 : Indication que le champ `custom` de la structure `Filter` attend un `Map<String, Value>` </h3>
 
 **Problème** : L'erreur indique que le champ `custom` de la structure `Filter` attend un `Map<String, Value>`, mais une option `Option` a été utilisée par erreur pour `empty_custom`.
 
 _**Correction**_ : Pour résoudre l'erreur, l'option `Option` a été supprimée de `empty_custom` tout en le fournissant comme valeur par défaut pour le champ `custom`.
 
-_<h3> Erreur 2 : Types incompatibles pour le champ `custom` de la structure `Filter` </h3>_
+<h3> Erreur 2 : Types incompatibles pour le champ `custom` de la structure `Filter` </h3>
 
 **Problème** : L'erreur indique un type incompatible à la ligne 29 pour le champ `authors` dans la structure `Filter`.
 
 _**Correction**_ : La correction consiste à convertir la `XOnlyPublicKey` en `String` en utilisant la méthode `to_string()` pour correspondre au type attendu.
 
-_<h3> Erreur 3 : Attendu `(` or `<`, found `<eof>` </h3>_
+<h3> Erreur 3 : Attendu `(` or `<`, found `<eof>`</h3>
 
 **Problème** : Cette erreur indique une fin de fichier inattendue (EOF) à la ligne 46. Le problème est probablement une erreur de
 
@@ -472,6 +483,7 @@ _**Correction**_ : Après vérification, il a été constaté que la fonction `m
 **Problème** : L'erreur met en évidence un type incompatible à la ligne 43 pour le champ `custom` dans la structure `Filter`.
 
 _**Correction**_ : La correction consiste à fournir une `Map<String, Value>` à la place d'une `Option<Map<String, Value>>` pour la variable `empty_custom`, ce qui correspond au type attendu.
+
 
 <h2> Améliorations Supplémentaires </h2>
 
