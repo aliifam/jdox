@@ -11,13 +11,13 @@ thumb: /img/thumb/Nostr_Rust.png
 
 <h1><a href="https://github.com/Ferrerkomi/Hello-Nostr-Improved">Hello-Nostr-Improved.</a></h1>
 
-<h2> Analogie: </h2>
+<h3> Analogie: </h3>
 
 Dans cet article, nous vous emmènerons dans l'univers fascinant de Nostr, un protocole de communication décentralisé. À l'aide de Rust, nous vous guiderons étape par étape pour construire votre toute première application Nostr. De l'installation de Rust et la génération de clés cryptographiques à la publication de messages et la récupération d'événements, ce tutoriel convivial pour les débutants couvre tout. Rejoignez-nous pour explorer les bases de Nostr, comprendre ses mécanismes sous-jacents et découvrir la magie d'une communication résistante à la 'censure'. Préparez-vous à embarquer pour une aventure passionnante de mise en réseau décentralisé avec Rust et Nostr !
 
 'Hello-Nostr-Improved' est une version améliorée du tutoriel original "[Hello-Nostr](https://ndkit.com/tutorials/hello-nostr/)" de [NostrDevKit](https://github.com/NostrDevKit/hello-nostr) qui aborde quelques erreurs rencontrées lors de l'exécution et ajoute une meilleure gestion de ces erreurs. Cet article servira de guide complet pour démontrer les interactions de base avec le réseau 'Nostr' en utilisant le langage de programmation Rust & la bibliothèque `nostr_sdk`. Le code présente les fonctionnalités clés, les améliorations de gestion des erreurs et les fonctionnalités supplémentaires pour fournir une application plus robuste & fiable pour communiquer avec le réseau 'Nostr'.
 
-<h2> Fonctionnalités </h2>
+<h3> Fonctionnalités </h3>
 
 - Génère une paire de clés publique & secrète à partir d'une clé privée fournie. "[Nostr POW KeyGen](https://www.nostr.rest/)".
 - Crée un client Nostr, se connecte au réseau Nostr & ajoute plusieurs relais pour la redondance.
@@ -26,21 +26,21 @@ Dans cet article, nous vous emmènerons dans l'univers fascinant de Nostr, un pr
 - Gestion améliorée des erreurs pour gérer de manière élégante les erreurs réseau, les entrées invalides & les scénarios inattendus.
 
 
-<h2> Prérequis </h2>
+<h3> Prérequis </h3>
 
 - Langage de programmation Rust (version stable la plus récente recommandée).
 - Gestionnaire de paquets 'Cargo'.
 - Protocole Nostr & NostrDevKit.
 
 
-<h2> Démarrage & processus parallèles: </h2>
+<h3> Démarrage & processus parallèles: </h3>
 
-<h3> Exécution:</h3>
+**Exécution:**
 
-**_Le code commence par importer les modules et les types requis. Il définit une constante 'PRIVATE_KEY', représentant une chaîne hexadécimale qui sert de clé privée pour générer des clés cryptographiques. La fonction main, marquée avec l'attribut '#[tokio::main]', est le point d'entrée du programme et gère les tâches asynchrones en utilisant le 'runtime de Tokio'. Dans la fonction 'main', le code génère une paire de clés publique et privée (my_keys) à partir de PRIVATE_KEY en utilisant des opérations cryptographiques. Il crée un client Nostr, ajoute deux relais au client et établit une connexion avec le réseau Nostr. Le code prépare un message textuel contenant la clé publique de l'utilisateur et le publie en tant que note sur le réseau Nostr. Après une pause de 1 seconde (pour permettre à l'événement de se propager sur le réseau), le code récupère les événements en utilisant un filtre basé sur la clé publique de l'utilisateur. Les événements récupérés sont affichés à la console, montrant les Event IDs, les clés publiques, les horodatages de création et le contenu des événements._**
+_Le code commence par importer les modules et les types requis. Il définit une constante 'PRIVATE_KEY', représentant une chaîne hexadécimale qui sert de clé privée pour générer des clés cryptographiques. La fonction main, marquée avec l'attribut '#[tokio::main]', est le point d'entrée du programme et gère les tâches asynchrones en utilisant le 'runtime de Tokio'. Dans la fonction 'main', le code génère une paire de clés publique et privée (my_keys) à partir de PRIVATE_KEY en utilisant des opérations cryptographiques. Il crée un client Nostr, ajoute deux relais au client et établit une connexion avec le réseau Nostr. Le code prépare un message textuel contenant la clé publique de l'utilisateur et le publie en tant que note sur le réseau Nostr. Après une pause de 1 seconde (pour permettre à l'événement de se propager sur le réseau), le code récupère les événements en utilisant un filtre basé sur la clé publique de l'utilisateur. Les événements récupérés sont affichés à la console, montrant les Event IDs, les clés publiques, les horodatages de création et le contenu des événements._
 
 
-<h3> Installation de Rust </h3>
+**Installation de Rust**
 
 Si vous avez déjà une installation fonctionnelle du compilateur Rust le plus récent, vous pouvez passer à la section suivante.
 
@@ -79,7 +79,7 @@ Hello, world! ou hello nostr!
 
 **Référez-vous à cette section chaque fois que vous souhaitez exécuter le programme.**
 
-<h2> Générer une paire de clés </h2>
+<h3> Générer une paire de clés </h3>
 
 Créons une paire de clés de manière non sécurisée à l'aide d'un outil en ligne:
 
@@ -97,7 +97,7 @@ fn main() {
 ```
 
 
-<h2> Ajouter la dépendance rust-nostr </h2>
+<h3> Ajouter la dépendance rust-nostr </h3>
 
 Ouvrez 'Cargo.toml' et ajoutez la dépendance 'rust-nostr'. Vous pouvez vérifier la dernière version de la bibliothèque ou utiliser la méthode ci-dessous.
 
@@ -110,14 +110,14 @@ tokio = { version = "1", features = ["full"] }
 ```
 
 
-<h2> Ajoutez l'import en haut du fichier 'main.rs'. </h2>
+<h3> Ajoutez l'import en haut du fichier 'main.rs'. </h3>
 
 ```rust
 use nostr_sdk::prelude::*;
 ```
 
 
-<h2> Rendre le programme asynchrone </h2>
+<h3> Rendre le programme asynchrone </h3>
 
 Mettez à jour la signature de la fonction 'main' pour ajouter le tag 'tokio', le marquer comme asynchrone et renvoyer le type 'nostr_sdk::prelude::Result'. Vous devrez ajouter l'instruction 'Ok(())' à la fin de la fonction 'main'.
 
@@ -130,7 +130,7 @@ async fn main() -> Result<()> {
 ```
 
 
-<h2> Charger la clé </h2>
+<h3> Charger la clé </h3>
 
 Nous devons créer une instance du type Keys à partir de notre clé privée. Mettez à jour la fonction main avec le code ci-dessous et exécutez-le.
 
@@ -149,7 +149,7 @@ Hello, nostr! My public key is: becd05edf0c858d6d371304bceab3188a8deb8556f4a5905
 ```
 
 
-<h2> Créer un client et ajouter des relais </h2>
+<h3> Créer un client et ajouter des relais </h3>
 
 'Nostr' utilise des 'relais' pour recevoir, stocker et interroger les 'événements' (events), et nous utilisons le type 'Client' pour accéder à un relais. Créez un 'client' ou compte et ajoutez deux relais pour recevoir notre message. L'utilisation de plusieurs relais garantit que notre contenu est répliqué et protège les créateurs de la censure. Après avoir ajouté les relais, appelez ou interpeler 'connect()'.
 
@@ -161,7 +161,7 @@ client.connect().await;
 ```
 
 
-<h2> Publier une note texte </h2>
+<h3> Publier une note texte </h3>
 
 Plaçons notre message dans une variable 'String' pour pouvoir l'afficher et l'envoyer aux relais. Ensuite, appelons la fonction 'publish_text_note' et affichons l'ID de l'événement résultant.
 
@@ -173,9 +173,9 @@ let event: Event = client.publish_text_note(message, &[]).await?;
 println!("{:#?}", event);
 
 ```
-_**Félicitations, vous avez publié votre premier événement !**_
+_Félicitations, vous avez publié votre premier événement !_
 
-_**Le resultat devrait être ceci:**_
+**Le resultat devrait être ceci:**
 
 ```bash
  Running `target/release/hello-nostr`
@@ -185,7 +185,7 @@ EventId(
 )
 ```
 
-_**Réexécutez !**_
+_Réexécutez !_
 
 Exécutez à nouveau le programme et notez que l'ID de l'événement 'change'. Cela est dû au fait que l'ID de l'événement est un 'hachage' de données qui inclut l'horodatage, et comme l'heure a changé depuis la publication d'origine, l'ID a également changé.
 
@@ -198,7 +198,7 @@ EventId(
 ```
 
 
-<h2> Récupérer l'événement </h2>
+<h3> Récupérer l'événement </h3>
 
 Ajoutons du code pour récupérer l'événement en créant une instance d'un Filter avec l'ID de l'événement que nous venons de créer.
 
@@ -262,7 +262,7 @@ EventId(
 ```
 
 
-<h2> Filtrage amélioré </h2>
+<h3> Filtrage amélioré </h3>
 
 En pratique, il est probablement rare de récupérer un événement par son ID. Nous utiliserions généralement des critères avec d'autres paramètres de filtre. Mettons à jour notre programme pour récupérer tous les événements que nous avons publiés à partir de notre clé.
 
@@ -429,9 +429,9 @@ _**Ces sections contiennent des informations sur les événements récupérés d
 Dans ce tutoriel simple, nous avons assuré que la chaîne d'outils 'Rust' était installée, créé un nouveau 'binaire Rust', publié un 'message' (événement) sur plusieurs 'relais' et récupéré le message.
 
 
-<h2> Explication du Code </h2>
+<h3> Explication du Code </h3>
 
-<h3> Génération des Clés </h3>
+_Génération des Clés_
 
 Le code inclut une fonction pour générer une paire de clés publique & secrète à partir d'une clé privée fournie, "[Nostr POW KeyGen](https://www.nostr.rest/)". Cela est réalisé à l'aide d'opérations cryptographiques et des structures `SecretKey` & `Keys` de la bibliothèque `nostr_sdk`. La gestion améliorée des erreurs garantit que les clés privées invalides sont gérées de manière élégante, évitant ainsi les plantages de l'application.
 
@@ -453,8 +453,7 @@ _Le programme se connecte avec succès au réseau Nostr et publie la note textue
 
 **_Le code peut récupérer des événements en double en raison de plusieurs relais dans le réseau Nostr, ce qui entraîne la propagation des événements par différents chemins._**
 
-
-<h2> Gestion des Erreurs et Corrections </h2>
+<h3> Gestion des Erreurs et Corrections </h3>
 
 Au cours du développement de ce projet, plusieurs erreurs ont été rencontrées et gérées de manière élégante pour améliorer la stabilité de l'application et l'expérience utilisateur. Voici les erreurs rencontrées et les corrections correspondantes: (Ceci n'est que mon cas en particulier et peut donc varier selon notre outil de travail...)
 
@@ -484,8 +483,7 @@ _Erreur 4 : Types incompatibles_
 
 _**Correction**_ : La correction consiste à fournir une `Map<String, Value>` à la place d'une `Option<Map<String, Value>>` pour la variable `empty_custom`, ce qui correspond au type attendu.
 
-
-<h2> Améliorations Supplémentaires </h2>
+<h3> Améliorations Supplémentaires </h3>
 
 Bien que la version actuelle offre des fonctionnalités de base et une gestion améliorée des erreurs, il existe plusieurs façons d'étendre et d'améliorer davantage l'application :
 
@@ -494,7 +492,7 @@ Bien que la version actuelle offre des fonctionnalités de base et une gestion a
 - **Contrats Intelligents** : Explorez l'intégration avec des contrats intelligents pour permettre des actions prédéfinies en fonction d'événements spécifiques.
 - **Concurrence** : Utilisez des tâches asynchrones pour effectuer plusieurs opérations simultanément et améliorer les performances de l'application.
 
-<h2> Conclusion </h2>
+<h3> Conclusion </h3>
 
 ce tutoriel nous a fourni une introduction douce et conviviale à la construction d'applications avec le protocole Nostr. Nous avons appris les bases de l'interaction avec le réseau Nostr en utilisant Rust et nous avons exploré comment publier et récupérer des événements du réseau. Nous avons commencé par installer les dépendances nécessaires et créer un projet Rust binaire. Ensuite, nous avons généré une paire de clés publique et privée à partir d'une clé privée fournie. En utilisant ces clés, nous avons créé un client Nostr et nous sommes connectés au réseau en ajoutant deux relais. Le client nous a permis de publier la note textuelle sur le réseau Nostr et de récupérer les événements correspondants.
 
