@@ -506,8 +506,6 @@ P.s
 
 Le code de ce dépôt est basé sur le tutoriel original "Hello-Nostr" de NostrDevKit. Un grand merci à l'équipe de [NostrDevKit](https://github.com/NostrDevKit) et aux contributeurs: "[Yuki Kishimoto](https://github.com/yukibtc) & [Max Gravitt](https://github.com/mgravitt)" pour leur travail précieux.
 
-Bon développement ! 🚀
-
 --------------------------------------------------------------
 
 _**Si vous trouvez cet article utile, vous pouvez envoyer des satoshis anonymes pour soutenir mes recherches & évaluations.**_
