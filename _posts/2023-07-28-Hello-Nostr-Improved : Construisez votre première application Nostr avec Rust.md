@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Hello-Nostr-Improved : Construisez votre première application Nostr avec Rust."
+title: "Hello-Nostr-Improved: Construisez votre première application Nostr avec Rust."
 date: 2023-07-28
-description: "Une introduction progressive au protocole Nostr, une communication résistante à la censure. De l'installation de Rust et la génération de clés cryptographiques à la publication de messages et la récupération d'événements."
+description: Une introduction progressive au protocole Nostr, une communication résistante à la censure.
 author: komi Segnibo
 tags: quotidien Nostr Rust Coding
 image: 
 thumb: /img/thumb/Nostr_Rust.png
 ---
 
-<h1><a href="https://github.com/Ferrerkomi/Hello-Nostr-Improved">Hello-Nostr-Improved.</a></h1>
+<h1><a href="https://github.com/Ferrerkomi/Hello-Nostr-Improved">Hello-Nostr-Improved</a></h1>
 
 <h3> Analogie: </h3>
 
