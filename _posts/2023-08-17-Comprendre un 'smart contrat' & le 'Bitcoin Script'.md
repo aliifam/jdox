@@ -23,15 +23,9 @@ La merveille de la cryptographie réside dans sa capacité à créer des entité
 
 La conception proposée par Szabo d'un contrat intelligent est basée sur un schéma de modèle en deux phases utilisé en théorie juridique: 'ex-ante & ex-post'. Les phases contractuelles sont structurées de la sorte:
 
-Ex-Ante - "Avant l'événement"
+'Ex-Ante' - "Avant l'événement", 'Recherche' - "Rassembler des informations", 'Négociation', "Accepter les conditions" 'Engagement', "Exécution des obligations"; 'Ex-Post' - "Résult réel", 'Performance' - "Ce qui s'est passé" et 'Adjudication' - "Verdict"
 
-Recherche - "Rassembler des informations" Négociation - "Accepter les conditions" Engagement - "Exécution des obligations"
-
-Ex-Post - "Résult réel" Performance - "Ce qui s'est passé"
-
-Adjudication - "Verdict"
-
-Szabo se concentre principalement sur la performance. Il suppose que des intermédiaires peuvent être utilisés et définit trois objectifs principaux d'un contrat intelligent en termes de phases: observabilité, vérifiabilité et confidentialité.
+Szabo se concentre principalement sur la performance. Il suppose que des intermédiaires peuvent être utilisés et définit trois objectifs principaux d'un smart contrat en termes de phases (observabilité, vérifiabilité et confidentialité).
 
   ![Vending Machine](https://i.imgur.com/VFr9QXdl.png)
 
