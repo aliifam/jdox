@@ -6,7 +6,7 @@ author: Komi Segnibo
 tags: quotidien programmation-extreme humour ethique cryptographie
 image: 
 thumb: /img/thumb/workout-code-comic.jpeg
-youtubeId: HGzfMQ7WyGBzH-Q
+youtubeId: JlB9oW8zMnI-ciR7
 ---
  
  <h3> "Démystification de la <a href="http://www.laputan.org/pub/books/xpinstall.pdf" target="_blank" rel="noopener noreferrer"> Programmation Extrême </a>, <a href="https://nigelwarburton.typepad.com/virtualphilosopher/files/Chicken.pdf" target="_blank" rel="noopener noreferrer"> Dilemme de la Poule-Œuf </a> & Énigmes Éthiques". </h3>
