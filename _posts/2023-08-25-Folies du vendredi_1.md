@@ -35,7 +35,7 @@ Mais retenez vos clés de chiffrement, car j'ai des blagues à la rescousse. Ave
 
 Ah, l'éthique & la technologie, le duo dynamique tout entier consacré à prendre les bonnes décisions dans un monde dominé par les uns et les zéros. De l'IA qui choisit votre prochaine série Netflix aux voitures autonomes qui se penchent sur les dilemmes éthiques de la vie, l'univers technologique regorge de questions qui feraient hausser un sourcil même aux philosophes.
 
-Admettons-le: si les robots pouvaient se gratter la tête, ils le feraient à peu près maintenant. Alors, pourquoi ne pas nous rejoindre alors que nous nous aventurons dans la jungle éthique ? Nous explorerons les jungles numériques où les algorithmes décident de ce que vous voyez, et les chatbots deviennent un peu trop bavards. Attachez vos ceintures – c'est une promenade cahoteuse à travers le royaume des uns, des zéros et des conundrums philosophiques.
+Admettons-le: si les robots pouvaient se gratter la tête, ils le feraient à peu près maintenant. Alors, pourquoi ne pas nous rejoindre alors que nous nous aventurons dans la jungle éthique ? Nous explorerons les jungles numériques où les algorithmes décident de ce que vous voyez, et les chatbots deviennent un peu trop bavards. Attachez vos ceintures, c'est une promenade cahoteuse à travers le royaume des uns, des zéros et des conundrums philosophiques.
 
 ![Robot](https://i.imgur.com/hOmM0bfl.jpg)
 
