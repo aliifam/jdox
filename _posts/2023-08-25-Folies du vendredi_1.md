@@ -19,7 +19,7 @@ Imaginez ceci: un programmeur et une poule se fixent mutuellement du regard de p
 
 ![Chicken or egg](https://i.imgur.com/0ffroQr.jpg)
 
-Dans la [Programmation Extrême](https://athena.ecs.csus.edu/~buckley/CSc131_files/Extreme%20Programming%20a%20Gentle%20introduction.pdf), les frontières entre les développeurs et les testeurs se brouillent comme des images pixelisées dans un jeu vidéo rétro. Vous voyez, XP ose poser la question: _peut-on vraiment écrire du code sans savoir ce qui va le casser?_ C'est un peu comme construire un manège à sensations les yeux bandés et espérer que tout se passe bien. Hélas! n'est-ce pas ça, le codage ?
+Dans la [Programmation Extrême](https://athena.ecs.csus.edu/~buckley/CSc131_files/Extreme%20Programming%20a%20Gentle%20introduction.pdf), les frontières entre les développeurs et les testeurs se brouillent comme des images pixelisées dans un jeu vidéo rétro. Vous voyez, XP ose poser la question: _peut-on vraiment écrire du code sans savoir ce qui va le casser ?_ C'est un peu comme construire un manège à sensations les yeux bandés et espérer que tout se passe bien. Hélas! n'est-ce pas ça, le codage ?
 
 ![XP](https://i.imgur.com/v4SVhj7.png)
 
