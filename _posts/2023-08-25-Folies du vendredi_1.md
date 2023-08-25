@@ -9,7 +9,7 @@ thumb: /img/thumb/workout-code-comic.jpeg
 youtubeId: HGzfMQ7WyGBzH-Q
 ---
  
- <h3> "Démystification de la <a href="http://www.laputan.org/pub/books/xpinstall.pdf" target="_blank" rel="noopener noreferrer"> Programmation Extrême </a>, <a href="https://nigelwarburton.typepad.com/virtualphilosopher/files/Chicken.pdf" target="_blank" rel="noopener noreferrer"> Dilemme de la Poule-Œuf </a> & Énigmes Éthiques". </h2>
+ <h3> "Démystification de la <a href="http://www.laputan.org/pub/books/xpinstall.pdf" target="_blank" rel="noopener noreferrer"> Programmation Extrême </a>, <a href="https://nigelwarburton.typepad.com/virtualphilosopher/files/Chicken.pdf" target="_blank" rel="noopener noreferrer"> Dilemme de la Poule-Œuf </a> & Énigmes Éthiques". </h3>
 
 Salut à tous, lecteurs assidus, amateurs & connaisseurs du code! Bienvenue dans mon tout nouveau segment, "Folies du Vendredi", où nous plongeons tête la première dans le monde excentrique de la technologie, des farces, de la cryptographie, de l'éthique, et tout ce qui chatouille notre penchant pour le geek. Prenez votre tasse de café (ou votre boisson énergisante, pour les séances de débogage marathon) et installez-vous pour une dose délicieuse de plaisir cérébral.
 
