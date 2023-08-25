@@ -23,7 +23,7 @@ Dans la [Programmation Extrême](https://athena.ecs.csus.edu/~buckley/CSc131_fil
 
 ![XP](https://i.imgur.com/v4SVhj7.png)
 
-<h3> Farces de bandes dessinées: 'Cryptographie avec une touche d'hilarité' </h3>
+<h3> Farce du 'password': 'Cryptographie avec une touche d'hilarité' </h3>
 
 En parlant de manèges à sensations, parlons de la cryptographie, l'art de transformer les secrets en un cocktail déroutant de caractères. _Imaginez que votre mot de passe et un Rubik's Cube aient un enfant?_ Voilà la cryptographie. C'est comme envoyer vos messages dans un tour mystérieux et magique à travers l'univers numérique, juste pour garder les regards indiscrets dans le doute.
 
