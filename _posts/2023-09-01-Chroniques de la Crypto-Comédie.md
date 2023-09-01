@@ -11,9 +11,9 @@ youtubeId: j4EskqfNeuk
 
 _Dans un coin caché de l'internet, où les mèmes et le code fusionnent pour former une alliance impie, une nouvelle race de tech-libertaires voit le jour. Armés d'Arduinos, de portefeuilles Bitcoin et d'une passion pour les mèmes liés aux calmars, ces guerriers numériques sont en quête de décentralisation du monde, un éclat de rire à la fois._
 
-<h3> Episode 1: La Révolte d'Arduino </h3>
+<h3> Episode 1: La Révolte <a href="https://www.arduino.cc/en/Guide/Introduction" target="_blank" rel="noopener noreferrer"> Arduino </h3> </a>
 
-Dans un repaire secret souterrain, notre héros, CryptoKeanu, travaille dur sur son dernier projet. Armé d'un Arduino Uno, il est déterminé à créer un appareil qui révolutionnera le monde de la préparation du café. Sa mission : contourner les corporations centralisées du café et redonner le pouvoir de la caféine aux gens.
+Dans un repaire secret souterrain, notre héros, CryptoKeanu, travaille dur sur son dernier projet. Armé d'un Arduino Uno, il est déterminé à créer un <a href="https://blog.arduino.cc/2022/11/25/enjoy-the-ultimate-espresso-machine-on-a-budget-with-gaggiuino/" target="_blank" rel="noopener noreferrer"> appareil </a> qui révolutionnera le monde de la préparation du café. Sa mission : contourner les corporations centralisées du café et redonner le pouvoir de la caféine aux gens.
 
 **_CryptoKeanu:_** "Avec cet Arduino et quelques capteurs, je pourrai préparer la tasse de café parfaite, adaptée aux préférences de chaque individu. Fini les lattes hors de prix dans les chaînes de cafés !"
 
@@ -41,7 +41,7 @@ Ils déchaînent une vague de mèmes de calmars sur les réseaux sociaux, laissa
 
 ![captain_squid](https://i.imgur.com/EV41N7Nl.jpg)
 
-<h3> Episode 4: L'Éveil Espressif </h3>
+<h3> Episode 4: L'Éveil <a href="https://en.wikipedia.org/wiki/List_of_common_microcontrollers#Espressif_Systems" target="_blank" rel="noopener noreferrer"> Espressif </h3> </a>
 
 De retour dans le monde physique, CryptoKeanu a réussi à préparer son café révolutionnaire avec son dispositif alimenté par Arduino. Il prend une gorgée et est transporté dans un état de béatitude caféinée.
 
