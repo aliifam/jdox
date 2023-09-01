@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Folies du Vendredi (Libérez votre Tech-Libertaire Intérieur avec Arduino, Bitcoin, et des Calmars").
+title: Folies du Vendredi (Tech-Libertaire avec Arduino, Bitcoin et des Calmars").
 description: Chroniques de la Crypto-Comédie.
 author: Komi Segnibo
 tags: quotidien programmation-arduino humour ethique micro-controlleurs
