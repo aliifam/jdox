@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OnionScraper; 'Scraper, accéder et enregistrer du contenu des Sites Web .onion avec Python et Tor'.
+title: OnionScraper, 'Scraper & enregistrer du contenu des Sites Web .onion avec Python & Tor'.
 description: Onion Site Scraper
 author: Komi Segnibo
 tags: quotidien Tor Onion Site Scraper Python
@@ -28,7 +28,7 @@ pip install requests
 
 Le projet 'TorScraper' consiste en un script Python qui utilise le réseau Tor pour accéder à un site Onion de votre choix, récupérer son contenu et le sauvegarder localement. Le script enregistre également les cookies envoyés par le site pour une analyse plus approfondie. Les principales caractéristiques du script sont les suivantes :
 
-  - Saisie personnalisable de l'URL du site de l'oignon.
+  - Saisie personnalisable de l'URL du site '.onion'.
 
   - Utilisation du réseau Tor via des proxys configurés.
 
