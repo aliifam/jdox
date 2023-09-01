@@ -12,7 +12,7 @@ Dans ce tutoriel, nous allons vous guider à travers le processus de création d
 
 <h3> Nom du projet: OnionScraper </h3>
 
-'OnionScraper' est un script Python qui vous permet de gratter le contenu des sites Web .onion en utilisant le réseau Tor, garantissant ainsi votre anonymat et votre confidentialité. Le script récupère non seulement le contenu, mais également, l'enregistre localement avec les cookies reçus pendant le processus de grattage ou de récupération. Ce guide vous guidera à travers la configuration et l'utilisation d'OnionScraper pour explorer les profondeurs cachées du réseau Tor.
+'OnionScraper' est un script Python qui vous permet de scraper le contenu des sites Web '.onion' en utilisant le réseau Tor, garantissant ainsi votre anonymat et votre confidentialité. Le script récupère non seulement le contenu, mais également, l'enregistre localement avec les cookies reçus pendant le processus de scraping ou de récupération. Ce guide vous guidera à travers la configuration et l'utilisation d'OnionScraper pour explorer les profondeurs cachées du réseau Tor.
 
 Exigences essentielles: Avant de commencer, assurez-vous d'avoir les conditions préalables suivantes:
 
@@ -34,11 +34,11 @@ Le projet 'TorScraper' consiste en un script Python qui utilise le réseau Tor p
 
   - Récupération du contenu de la page web et des informations sur les cookies.
 
-  - Enregistrement du contenu et des cookies dans des fichiers locaux.
+  - Enregistrement du contenu et des cookies dans un fichier local.
 
 <h3> Installation & Usage </h3>
 
-Pour configurer 'OnionScraper', procédez comme suit:
+Pour configurer ou utiliser 'OnionScraper', procédez comme suit:
 
 Cloner le référentiel ou dépôt: cloner le dépôt OnionScraper à partir de GitHub:
 
@@ -49,7 +49,7 @@ git clone https://github.com/Ferrerkomi/onion_scraper.git
 Accédez au répertoire:
 
 ```bash
-cd OnionScraper
+cd onion_scraper
 ```
 
 Procédez comme suit pour utiliser `OnionScraper`:
@@ -57,7 +57,7 @@ Procédez comme suit pour utiliser `OnionScraper`:
 Exécutez le script dans votre terminal:
 
 ```bash
-python3 onionscraper.py <onion_url>
+python3 onion_scraper.py <onion_url>
 ```
 
 Remplacez `<onion_url>` par l'URL du site web '.onion' que vous voulez scraper. (Ex. python3 onion_scraper.py https://www.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/)
