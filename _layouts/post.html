@@ -12,7 +12,7 @@ layout: default
       <img class="author-post_avatar" src="{{ author.avatar }}" alt="">
       <div>
         <a href="{{ site.url }}{{ site.baseurl }}{{ author.url }}"><p class="author-post_p">{{ author.name }}</p></a>
-        {% assign minute=content | number_of_words | divided_by: 265 | plus: 1 %}
+        {% assign minute = content | number_of_words | divided_by: 265 | plus: 1 %}
         <time class="author-post_p" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }} •    
           {% if page.minute %} {{ page.minute }} {% else %} {{ minute }} {% endif %} min read</time>
       </div>
@@ -21,30 +21,33 @@ layout: default
   {{ content }}
   <span class="meta">
     {% for tag in page.tags %}
-    <a href="{{ site.url }}{{ site.baseurl }}/tag/{{tag}}">{{tag}}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}
+      <a href="{{ site.url }}{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
   </span>
 </section>
 
 {% include share.html %}
 
-  <nav class="post-nav">
-    {% if page.previous %}
-    <a class="post-nav-item post-nav-prev" href="{{ page.previous | relative_url }}">
+<nav class="post-nav">
+  {% if page.previous %}
+    <a class="post-nav-item post-nav-prev" href="{{ page.previous.url | relative_url }}">
       <div class="nav-arrow">Previous</div>
       <span class="post-title">{{ page.previous.title }}</span>
     </a>
-    {% endif %} {% if page.next %}
-    <a class="post-nav-item post-nav-next" href="{{ page.next | relative_url }}">
+  {% endif %}
+
+  {% if page.next %}
+    <a class="post-nav-item post-nav-next" href="{{ page.next.url | relative_url }}">
       <div class="nav-arrow">Next</div>
       <span class="post-title">{{ page.next.title }}</span>
     </a>
-    {% endif %}
+  {% endif %}
+</nav>
 
-  </nav>
 {% include disqus.html %}
 <script defer src="{{ site.url }}{{ site.baseurl }}/assets/js/applause-button.js"></script>
 
 {% assign gambar = page.content %}
 {% if gambar contains '<img ' %}
-	<script defer src="{{ site.url }}{{ site.baseurl }}/assets/js/zoom-image.js"></script>
+  <script defer src="{{ site.url }}{{ site.baseurl }}/assets/js/zoom-image.js"></script>
 {% endif %}

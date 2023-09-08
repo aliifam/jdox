@@ -1,10 +1,11 @@
 ---
 short_name: admin
 name: admin website
-bio: sebuah admin yang hebat untuk website
-avatar:  /img/author/default.webp
-username: aliifam # general username
-github: aliifam # github username
-twitter: lifrief # twitter username
-email: me@aliif.space # email adress
+bio: "Crypto-anarchy is unforgiving of crypto-apathy. Jacob Riggs"
+avatar: "https://robohash.org/Admin"
+username: Komi Hartman
+github: Ferrerkomi
+twitter: Komi_Hartman
+email: segnibo2@icloud.com
 ---
+
